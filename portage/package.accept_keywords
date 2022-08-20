@@ -1,0 +1,5 @@
+*/*::steam-overlay
+
+games-util/game-device-udev-rules ~amd64
+sys-libs/libcap ~amd64
+sys-libs/pam ~amd64
