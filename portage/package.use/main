@@ -1,0 +1,5 @@
+media-libs/alsa alisp
+media-libs/libvpx postproc
+sys-apps/openrc sysv-utils
+sys-libs/ncurses -gpm
+x11-misc/picom config-file
