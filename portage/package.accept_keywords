@@ -1,5 +1,6 @@
 */*::steam-overlay
 
+dev-util/nvidia-cuda-toolkit ~amd64
 games-util/game-device-udev-rules ~amd64
 sys-libs/libcap ~amd64
 sys-libs/pam ~amd64
