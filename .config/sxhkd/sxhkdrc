@@ -1,0 +1,18 @@
+# Reload config
+super + Escape
+	kill -10 $?
+
+XF86AudioLowerVolume
+	pactl set-sink-volume $(pactl get-default-sink) -5%
+
+XF86AudioRaiseVolume
+	pactl set-sink-volume $(pactl get-default-sink) +5%
+
+XF86AudioMute
+	pactl set-sink-mute $(pactl get-default-sink) toggle
+
+XF86AudioMicMute
+	pactl set-source-mute $(pactl get-default-source) toggle
+
+Print 
+	scrot -e 'mv $f ~/Media/screenshots'

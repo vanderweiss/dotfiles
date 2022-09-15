@@ -1,0 +1,63 @@
+Config {	
+
+    font			  =	"ProFont IIx Nerd Font Mono:size=9:bold:antialias=true",
+	bgColor			  =	"black",
+	fgColor			  =	"#646464",
+	position		  =	Top,
+	border			  =	BottomB,
+	borderColor       =	"#646464",  
+
+	lowerOnStart      =	True,   
+	hideOnStart		  = False, 
+	allDesktops	      =	True,
+	overrideRedirect  =	True,  
+	pickBroadest	  =	False,  
+	persistent		  =	True, 
+
+    commands = [
+
+		Run StdinReader,
+
+        Run MultiCpu       [ "--template" , "Cpu: <total0>%-<total1>%"
+                             , "--Low"      , "50"         -- units: %
+                             , "--High"     , "85"         -- units: %
+                             , "--low"      , "darkgreen"
+                             , "--normal"   , "darkorange"
+                             , "--high"     , "darkred"
+                             ] 10,
+                          
+        Run Memory         [ "--template" ,"Mem: <usedratio>%"
+                             , "--Low"      , "20"        -- units: %
+                             , "--High"     , "90"        -- units: %
+                             , "--low"      , "darkgreen"
+                             , "--normal"   , "darkorange"
+                             , "--high"     , "darkred"
+                             ] 10,
+
+        Run Battery        [ "--template" , "Batt: <acstatus>"
+                             , "--Low"      , "10"        -- units: %
+                             , "--High"     , "80"        -- units: %
+                             , "--low"      , "darkred"
+                             , "--normal"   , "darkorange"
+                             , "--high"     , "darkgreen"
+
+                             , "--" -- battery specific options
+                                       -- discharging status
+                                       , "-o"	, "<left>% (<timeleft>)"
+                                       -- AC "on" status
+                                       , "-O"	, "<fc=#dAA520>Charging</fc>"
+                                       -- charged status
+                                       , "-i"	, "<fc=#006000>Charged</fc>"
+                             ] 50,
+ 
+        --   (%F = y-m-d date, %a = day of week, %T = h:m:s time)
+        Run Date           "<fc=#ABABAB>%F (%a) %T</fc>" "date" 10
+
+		],
+	                                                                                                      	
+	sepChar			= "%",   
+	alignSep		= "}{",  
+	template		= " %StdinReader% }{ %multicpu% | %memory% | %battery% | %date% "    
+   }
+   
+
