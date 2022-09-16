@@ -57,8 +57,12 @@ return require('packer').startup(function(use)
 
 	use 'nvim-treesitter/nvim-treesitter'
 	use 'lukas-reineke/indent-blankline.nvim'	
-	use 'mattn/emmet-vim'		
-	use 'ap/vim-css-color'		
+	use 'mattn/emmet-vim'	
+
+	use {
+		'norcalli/nvim-colorizer.lua',
+		config = setup('nvim-colorizer')
+	}	
 
 	use {
 		'ziontee113/color-picker.nvim',

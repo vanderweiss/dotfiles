@@ -5,8 +5,7 @@ require('lualine').setup {
 		theme = 'auto'
 	},
 	sections = {
-		lualine_b = {
-			'branch',  
+		lualine_b = {  
 			{
 				'diagnostics',
 				sources = {'nvim_lsp', 'nvim_diagnostic'},

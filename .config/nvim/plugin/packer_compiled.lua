@@ -9,23 +9,26 @@ vim.api.nvim_command('packadd packer.nvim')
 
 local no_errors, error_msg = pcall(function()
 
-  local time
-  local profile_info
-  local should_profile = false
-  if should_profile then
-    local hrtime = vim.loop.hrtime
-    profile_info = {}
-    time = function(chunk, start)
-      if start then
-        profile_info[chunk] = hrtime()
-      else
-        profile_info[chunk] = (hrtime() - profile_info[chunk]) / 1e6
-      end
+_G._packer = _G._packer or {}
+_G._packer.inside_compile = true
+
+local time
+local profile_info
+local should_profile = false
+if should_profile then
+  local hrtime = vim.loop.hrtime
+  profile_info = {}
+  time = function(chunk, start)
+    if start then
+      profile_info[chunk] = hrtime()
+    else
+      profile_info[chunk] = (hrtime() - profile_info[chunk]) / 1e6
     end
-  else
-    time = function(chunk, start) end
   end
-  
+else
+  time = function(chunk, start) end
+end
+
 local function save_profiles(threshold)
   local sorted_times = {}
   for chunk_name, time_taken in pairs(profile_info) do
@@ -38,8 +41,10 @@ local function save_profiles(threshold)
       results[i] = elem[1] .. ' took ' .. elem[2] .. 'ms'
     end
   end
+  if threshold then
+    table.insert(results, '(Only showing plugins that took longer than ' .. threshold .. ' ms ' .. 'to load)')
+  end
 
-  _G._packer = _G._packer or {}
   _G._packer.profile_output = results
 end
 
@@ -134,6 +139,12 @@ _G.packer_plugins = {
     path = "/home/acertig/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-colorizer.lua"] = {
+    config = { "require('setup/nvim-colorizer')" },
+    loaded = true,
+    path = "/home/acertig/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
+    url = "https://github.com/norcalli/nvim-colorizer.lua"
+  },
   ["nvim-lspconfig"] = {
     config = { "require('setup/nvim-lspconfig')" },
     loaded = true,
@@ -183,23 +194,30 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/acertig/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
-  },
-  ["vim-css-color"] = {
-    loaded = true,
-    path = "/home/acertig/.local/share/nvim/site/pack/packer/start/vim-css-color",
-    url = "https://github.com/ap/vim-css-color"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nvim-colorizer.lua
+time([[Config for nvim-colorizer.lua]], true)
+require('setup/nvim-colorizer')
+time([[Config for nvim-colorizer.lua]], false)
+-- Config for: nvim-cmp
+time([[Config for nvim-cmp]], true)
+require('setup/nvim-cmp')
+time([[Config for nvim-cmp]], false)
 -- Config for: presence.nvim
 time([[Config for presence.nvim]], true)
 require('setup/presence')
 time([[Config for presence.nvim]], false)
--- Config for: lualine.nvim
-time([[Config for lualine.nvim]], true)
-require('setup/lualine')
-time([[Config for lualine.nvim]], false)
+-- Config for: nvim-lspconfig
+time([[Config for nvim-lspconfig]], true)
+require('setup/nvim-lspconfig')
+time([[Config for nvim-lspconfig]], false)
+-- Config for: color-picker.nvim
+time([[Config for color-picker.nvim]], true)
+require('setup/color-picker')
+time([[Config for color-picker.nvim]], false)
 -- Config for: telescope.nvim
 time([[Config for telescope.nvim]], true)
 require('setup/telescope')
@@ -208,18 +226,14 @@ time([[Config for telescope.nvim]], false)
 time([[Config for nvim-tree.lua]], true)
 require('setup/nvim-tree')
 time([[Config for nvim-tree.lua]], false)
--- Config for: nvim-cmp
-time([[Config for nvim-cmp]], true)
-require('setup/nvim-cmp')
-time([[Config for nvim-cmp]], false)
--- Config for: color-picker.nvim
-time([[Config for color-picker.nvim]], true)
-require('setup/color-picker')
-time([[Config for color-picker.nvim]], false)
 -- Config for: mason.nvim
 time([[Config for mason.nvim]], true)
 require('setup/mason')
 time([[Config for mason.nvim]], false)
+-- Config for: lualine.nvim
+time([[Config for lualine.nvim]], true)
+require('setup/lualine')
+time([[Config for lualine.nvim]], false)
 -- Config for: nvim-transparent
 time([[Config for nvim-transparent]], true)
 require('setup/nvim-transparent')
@@ -228,10 +242,13 @@ time([[Config for nvim-transparent]], false)
 time([[Config for material.nvim]], true)
 require('setup/material')
 time([[Config for material.nvim]], false)
--- Config for: nvim-lspconfig
-time([[Config for nvim-lspconfig]], true)
-require('setup/nvim-lspconfig')
-time([[Config for nvim-lspconfig]], false)
+
+_G._packer.inside_compile = false
+if _G._packer.needs_bufread == true then
+  vim.cmd("doautocmd BufRead")
+end
+_G._packer.needs_bufread = false
+
 if should_profile then save_profiles() end
 
 end)
