@@ -1,5 +1,10 @@
+dev-libs/libxml2 icu
+dev-python/PyQt5 svg widgets gui network printsupport webchannel
+dev-qt/qtwebchannel qml
+dev-qt/qtwebengine widgets
 media-libs/alsa alisp
 media-libs/libvpx postproc
 sys-apps/openrc sysv-utils
 sys-libs/ncurses -gpm
+sys-libs/zlib minizip
 x11-misc/picom config-file
