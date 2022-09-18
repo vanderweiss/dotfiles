@@ -23,12 +23,16 @@ export EDITOR='nvim'
 export HISTFILESIZE=
 export HISTSIZE=
 
-export LS_COLORS="$(vivid generate dracula)"
+export EXA_COLORS="$(vivid generate dracula)"
 
-alias ls='\exa -la --icons --no-user --no-time'
+alias ls='\exa --all --group --long --numeric --icons --octal-permissions --no-filesize --no-permissions --no-time --time-style=iso'
 
-CLEAR="\[\033[0m\]"
+function color() {
+	echo "\[$(tput setaf $1)\]"	
+}
 
-PS1="$(tput setaf 57) \w/$CLEAR $(tput setaf 135)\h ❯ $CLEAR"
+RESET="\[$(tput sgr0)\]"
+
+PS1="$(color 57) \w/${RESET} $(color 135)> ${RESET}"
 
 #echo -e "\n" && neofetch
