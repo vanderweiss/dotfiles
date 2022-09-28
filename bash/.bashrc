@@ -24,15 +24,12 @@ export HISTFILESIZE=
 export HISTSIZE=
 
 export EXA_COLORS="$(vivid generate dracula)"
+export LS_COLORS="$EXA_COLORS"
 
-alias ls='\exa --all --group --long --numeric --icons --octal-permissions --no-filesize --no-permissions --no-time --time-style=iso'
-
-function color() {
-	echo "\[$(tput setaf $1)\]"	
-}
+alias ls='\exa --all --long --numeric --icons --octal-permissions --no-filesize --no-permissions --no-time --time-style=iso'
 
 RESET="\[$(tput sgr0)\]"
 
-PS1="$(color 57) \w/${RESET} $(color 135)> ${RESET}"
+PS1=" \[\e[1;31m\]\w \[\e[35m\]> $RESET"
 
 #echo -e "\n" && neofetch
