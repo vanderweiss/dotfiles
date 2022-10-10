@@ -1,5 +1,5 @@
 -- Modules
 
-require '.settings'
+require '.options'
 require '.keybinds'
 require '.plugins'

@@ -55,7 +55,11 @@ return require('packer').startup(function(use)
 		config = setup('mason')
 	}
 
-	use 'nvim-treesitter/nvim-treesitter'
+	use {
+		'nvim-treesitter/nvim-treesitter',
+		config = setup('nvim-treesitter')
+	}
+
 	use 'lukas-reineke/indent-blankline.nvim'	
 	use 'mattn/emmet-vim'	
 
@@ -63,11 +67,6 @@ return require('packer').startup(function(use)
 		'norcalli/nvim-colorizer.lua',
 		config = setup('nvim-colorizer')
 	}	
-
-	use {
-		'ziontee113/color-picker.nvim',
-		config = setup('color-picker')
-	}
 
 	use {
 		'akinsho/bufferline.nvim',

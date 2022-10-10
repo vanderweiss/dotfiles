@@ -1,8 +1,10 @@
 require('lualine').setup {
 	options = {
+		theme = 'auto',
 		globalstatus = true,
 		icons_enabled = true,
-		theme = 'auto'
+		section_separators = { left = '', right = '' },
+		component_separators = { left = '⁝', right = '⁝' }
 	},
 	sections = {
 		lualine_b = {  
@@ -27,13 +29,13 @@ require('lualine').setup {
 			'filename',
 			{
 				'lsp_progress',
-				display_components = { 'lsp_client_name', { 'title', 'percentage', 'message' },},
+				display_components = { 'lsp_client_name' },
 				separators = {
 					component = ' ',
 					progress = ' | ',
 					percentage = { pre = '', post = '%% ' },
 					title = { pre = '', post = ': ' },
-					lsp_client_name = { pre = '[', post = ']' },
+					lsp_client_name = { pre = '', post = '' },
 					message = { commenced = 'In Progress', completed = 'Completed' },
 				},
 				timer = { progress_enddelay = 500, lsp_client_name_enddelay = 1000 },
