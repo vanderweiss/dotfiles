@@ -99,11 +99,6 @@ _G.packer_plugins = {
     path = "/home/acertig/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
-  ["lualine-lsp-progress"] = {
-    loaded = true,
-    path = "/home/acertig/.local/share/nvim/site/pack/packer/start/lualine-lsp-progress",
-    url = "https://github.com/arkav/lualine-lsp-progress"
-  },
   ["lualine.nvim"] = {
     config = { "require('setup/lualine')" },
     loaded = true,
@@ -120,12 +115,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/acertig/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
-  },
-  ["material.nvim"] = {
-    config = { "require('setup/material')" },
-    loaded = true,
-    path = "/home/acertig/.local/share/nvim/site/pack/packer/start/material.nvim",
-    url = "https://github.com/marko-cerovac/material.nvim"
   },
   ["nvim-cmp"] = {
     config = { "require('setup/nvim-cmp')" },
@@ -145,28 +134,11 @@ _G.packer_plugins = {
     path = "/home/acertig/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
-  ["nvim-transparent"] = {
-    config = { "require('setup/nvim-transparent')" },
-    loaded = true,
-    path = "/home/acertig/.local/share/nvim/site/pack/packer/start/nvim-transparent",
-    url = "https://github.com/xiyaowong/nvim-transparent"
-  },
-  ["nvim-tree.lua"] = {
-    config = { "require('setup/nvim-tree')" },
-    loaded = true,
-    path = "/home/acertig/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
-    url = "https://github.com/kyazdani42/nvim-tree.lua"
-  },
   ["nvim-treesitter"] = {
     config = { "require('setup/nvim-treesitter')" },
     loaded = true,
     path = "/home/acertig/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
-  },
-  ["nvim-web-devicons"] = {
-    loaded = true,
-    path = "/home/acertig/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
-    url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -178,29 +150,18 @@ _G.packer_plugins = {
     path = "/home/acertig/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["presence.nvim"] = {
-    config = { "require('setup/presence')" },
+  vimdark = {
     loaded = true,
-    path = "/home/acertig/.local/share/nvim/site/pack/packer/start/presence.nvim",
-    url = "https://github.com/andweeb/presence.nvim"
-  },
-  ["telescope.nvim"] = {
-    config = { "require('setup/telescope')" },
-    loaded = true,
-    path = "/home/acertig/.local/share/nvim/site/pack/packer/start/telescope.nvim",
-    url = "https://github.com/nvim-telescope/telescope.nvim"
+    path = "/home/acertig/.local/share/nvim/site/pack/packer/start/vimdark",
+    url = "https://github.com/ldelossa/vimdark"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: material.nvim
-time([[Config for material.nvim]], true)
-require('setup/material')
-time([[Config for material.nvim]], false)
--- Config for: nvim-colorizer.lua
-time([[Config for nvim-colorizer.lua]], true)
-require('setup/nvim-colorizer')
-time([[Config for nvim-colorizer.lua]], false)
+-- Config for: mason.nvim
+time([[Config for mason.nvim]], true)
+require('setup/mason')
+time([[Config for mason.nvim]], false)
 -- Config for: nvim-lspconfig
 time([[Config for nvim-lspconfig]], true)
 require('setup/nvim-lspconfig')
@@ -213,26 +174,10 @@ time([[Config for lualine.nvim]], false)
 time([[Config for nvim-cmp]], true)
 require('setup/nvim-cmp')
 time([[Config for nvim-cmp]], false)
--- Config for: telescope.nvim
-time([[Config for telescope.nvim]], true)
-require('setup/telescope')
-time([[Config for telescope.nvim]], false)
--- Config for: presence.nvim
-time([[Config for presence.nvim]], true)
-require('setup/presence')
-time([[Config for presence.nvim]], false)
--- Config for: nvim-tree.lua
-time([[Config for nvim-tree.lua]], true)
-require('setup/nvim-tree')
-time([[Config for nvim-tree.lua]], false)
--- Config for: mason.nvim
-time([[Config for mason.nvim]], true)
-require('setup/mason')
-time([[Config for mason.nvim]], false)
--- Config for: nvim-transparent
-time([[Config for nvim-transparent]], true)
-require('setup/nvim-transparent')
-time([[Config for nvim-transparent]], false)
+-- Config for: nvim-colorizer.lua
+time([[Config for nvim-colorizer.lua]], true)
+require('setup/nvim-colorizer')
+time([[Config for nvim-colorizer.lua]], false)
 -- Config for: nvim-treesitter
 time([[Config for nvim-treesitter]], true)
 require('setup/nvim-treesitter')

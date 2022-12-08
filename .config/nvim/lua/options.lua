@@ -11,13 +11,12 @@ opt.updatetime = 100
 opt.mouse = 'r'
 opt.fillchars = 'eob: '
 opt.encoding = 'UTF-8'
-opt.clipboard = 'unnamedplus'
+opt.clipboard = 'unnamedplus' 
 
 vim.g.signcolum = 'no'
 vim.g.nobackup = true
 vim.g.nowritebackup = true
 
-vim.cmd('highlight VertSplit cterm=NONE')
-vim.cmd('highlight Normal ctermbg=none')
-vim.cmd('highlight NonText ctermbg=none')
-vim.cmd('hi! link SignColumn LineNr')
+vim.cmd('set cursorline cursorlineopt=number')
+vim.cmd('colorscheme vimdark')
+

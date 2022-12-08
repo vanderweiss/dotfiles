@@ -1,4 +1,4 @@
-vim.g.indentLine_char = '┆'
+vim.g.indentLine_char = '|'
 
 require('indent_blankline').setup {
 	space_char_blankline = " ",

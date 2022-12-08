@@ -22,18 +22,7 @@ return require('packer').startup(function(use)
 
 	-- Plugins
 
-	use 'nvim-lua/plenary.nvim'					
-	use 'kyazdani42/nvim-web-devicons'
-
-	use {
-		'kyazdani42/nvim-tree.lua', 
-		config = setup('nvim-tree')
-	}				
-	
-	use {
-		'nvim-telescope/telescope.nvim',
-		config = setup('telescope')
-	}		
+	use 'nvim-lua/plenary.nvim'						
 
 	use {
 		'neovim/nvim-lspconfig',
@@ -57,7 +46,7 @@ return require('packer').startup(function(use)
 
 	use {
 		'nvim-treesitter/nvim-treesitter',
-		config = setup('nvim-treesitter')
+		config = setup('nvim-treesitter'),
 	}
 
 	use 'lukas-reineke/indent-blankline.nvim'	
@@ -69,40 +58,11 @@ return require('packer').startup(function(use)
 	}	
 
 	use {
-		'akinsho/bufferline.nvim',
-		config = setup('bufferline'),
-		disable = true
-	}
-
-	use {
 		'nvim-lualine/lualine.nvim',
 		config = setup('lualine')
 	}
 
-	use 'arkav/lualine-lsp-progress'
-	
-	use {
-		'andweeb/presence.nvim',
-		config = setup('presence')
-	}
-	
-	use {
-		'xiyaowong/nvim-transparent', 
-		config = setup('nvim-transparent')
-	}
-
-	-- Colorschemes
-
-	use {
-		'ishan9299/modus-theme-vim',
-		config = setup('modus-theme-vim'),
-		disable = true
-	}
-
-	use {
-		'marko-cerovac/material.nvim',
-		config = setup('material')
-	}
+	use 'ldelossa/vimdark'
 		
 	-- Bootstrapping
 

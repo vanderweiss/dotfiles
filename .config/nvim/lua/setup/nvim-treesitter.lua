@@ -15,7 +15,7 @@ require('nvim-treesitter.configs').setup {
 	  'toml'
   },
 
-  sync_install = false,
+  sync_install = true,
   auto_install = true,
   ignore_install = {},
 

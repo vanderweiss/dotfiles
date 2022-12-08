@@ -26,10 +26,18 @@ export HISTSIZE=
 export EXA_COLORS="$(vivid generate dracula)"
 export LS_COLORS="$EXA_COLORS"
 
-alias ls='\exa --all --long --numeric --icons --octal-permissions --no-filesize --no-permissions --no-time --time-style=iso'
+export NNN_OPTS='cH'
+export NNN_OPENER="~/.config/plugins/nuke"
+export NNN_TMPFILE='/tmp/.lastd'
+export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
+export NNN_PLUG='i:imgview'
+
+# -- Aliases ---
+
+alias ls='\exa --all --long --numeric --octal-permissions --no-filesize --no-permissions --no-time --time-style=iso'
+
+# --- Prompt ---
 
 RESET="\[$(tput sgr0)\]"
 
 PS1=" \[\e[1;31m\]\w \[\e[35m\]> $RESET"
-
-#echo -e "\n" && neofetch

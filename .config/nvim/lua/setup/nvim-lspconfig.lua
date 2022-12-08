@@ -1,42 +1,16 @@
 vim.lsp.set_log_level('debug')
 
 vim.diagnostic.config {
+	signs = false,
 	update_in_insert = false,
-	virtual_text = false
+	virtual_text = false	
 }
-
---[[local diagnostic_signs = {
-	{ name = "DiagnosticSignError", text = "" },
-	{ name = "DiagnosticSignWarn", text = "" },
-	{ name = "DiagnosticSignHint", text = "" },
-	{ name = "DiagnosticSignInfo", text = "" },
-}
-
-for _, sign in ipairs(diagnostic_signs) do
-	vim.fn.sign_define(sign.name, {
-		texthl = sign.name,
-		text = sign.text,
-		numhl = sign.name,	
-	})
-end--]]
-
-local signs = {
-	Error = " ",
-    Warn = " ",
-    Hint = " ",
-    Info = " "
-}
-
-for type, icon in pairs(signs) do
-    local hl = "DiagnosticSign" .. type
-    vim.fn.sign_define(hl, {text = icon, texthl = hl, numhl = hl})
-end
 
 vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus = false})]]
 
 local lsp_flags = {debounce_text_changes = 150,}
 
-local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
 local lspconfig = require('lspconfig')
 
 local servers = {
@@ -44,7 +18,6 @@ local servers = {
 	'cssls',
     'cmake',
     'clangd',
-	--'hls',
 	'html',
     'jsonls',
     'pyright',
