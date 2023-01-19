@@ -1,0 +1,9 @@
+app-text/wgetpaste ~amd64
+dev-lang/nim ~amd64
+dev-libs/quazip ~amd64
+dev-util/nvidia-cuda-toolkit ~amd64
+games-action/prismlauncher ~amd64
+games-util/game-device-udev-rules ~amd64
+net-irc/catgirl ~amd64
+sys-devel/mold ~amd64
+sys-libs/libcap ~amd64

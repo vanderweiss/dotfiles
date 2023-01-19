@@ -1,0 +1,2 @@
+CFLAGS="${CFLAGS} -flto=8"
+CXXFLAGS="${CXXFLAGS} -flto=8"

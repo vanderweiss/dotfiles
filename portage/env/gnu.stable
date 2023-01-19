@@ -1,0 +1,10 @@
+CC="gcc"
+CXX="g++"
+AR="ar"
+NM="nm"
+RANLIB="ranlib"
+
+CFLAGS="-march=native -O3 -pipe"
+CXXFLAGS="${CFLAGS}"
+
+LDFLAGS="-Wl,--as-needed"

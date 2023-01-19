@@ -1,0 +1,3 @@
+app-emulation/qemu gnu.stable
+dev-util/glslang llvm.lld
+www-client/chromium llvm.lld
