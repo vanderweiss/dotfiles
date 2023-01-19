@@ -23,7 +23,7 @@ export EDITOR='nvim'
 export HISTFILESIZE=
 export HISTSIZE=
 
-export EXA_COLORS="$(vivid generate dracula)"
+export EXA_COLORS="$(vivid generate jellybeans)"
 export LS_COLORS="$EXA_COLORS"
 
 export NNN_OPTS='cH'
@@ -40,4 +40,5 @@ alias ls='\exa --all --long --numeric --octal-permissions --no-filesize --no-per
 
 RESET="\[$(tput sgr0)\]"
 
-PS1=" \[\e[1;31m\]\w \[\e[35m\]> $RESET"
+PS1=" \[\e[36m\]> $RESET"
+. "$HOME/.cargo/env"

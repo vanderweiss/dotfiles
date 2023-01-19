@@ -1,12 +1,8 @@
-vim.lsp.set_log_level('debug')
-
 vim.diagnostic.config {
 	signs = false,
 	update_in_insert = false,
 	virtual_text = false	
 }
-
-vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus = false})]]
 
 local lsp_flags = {debounce_text_changes = 150,}
 
@@ -61,4 +57,4 @@ lspconfig['sumneko_lua'].setup {
 			}
 		}
 	}
-}
+} 

@@ -30,23 +30,31 @@ return require('packer').startup(function(use)
 	}
 
 	use {
-		'hrsh7th/nvim-cmp',
-		config = setup('nvim-cmp')
+		'williamboman/mason.nvim',
+		config = setup('mason'),
+		requires = {
+			'williamboman/mason-lspconfig.nvim'
+		}
 	}
 
-	use 'hrsh7th/cmp-nvim-lsp'					
-	use 'L3MON4D3/LuaSnip'						
-	use 'saadparwaiz1/cmp_luasnip'	
-	use 'williamboman/mason-lspconfig.nvim'
-
 	use {
-		'williamboman/mason.nvim',
-		config = setup('mason')
+		'hrsh7th/nvim-cmp',
+		config = setup('nvim-cmp'),
+		requires = {
+			'hrsh7th/cmp-nvim-lsp',
+			'L3MON4D3/LuaSnip',
+			'saadparwaiz1/cmp_luasnip'
+		}
 	}
 
 	use {
 		'nvim-treesitter/nvim-treesitter',
-		config = setup('nvim-treesitter'),
+		config = setup('nvim-treesitter')
+	}
+
+	use {
+		'nvim-lualine/lualine.nvim',
+		config = setup('lualine')
 	}
 
 	use 'lukas-reineke/indent-blankline.nvim'	
@@ -58,11 +66,12 @@ return require('packer').startup(function(use)
 	}	
 
 	use {
-		'nvim-lualine/lualine.nvim',
-		config = setup('lualine')
+		'xiyaowong/nvim-transparent',
+		config = setup('nvim-transparent')
 	}
 
-	use 'ldelossa/vimdark'
+	use 'rktjmp/lush.nvim'
+	use 'kabouzeid/nvim-jellybeans'
 		
 	-- Bootstrapping
 
