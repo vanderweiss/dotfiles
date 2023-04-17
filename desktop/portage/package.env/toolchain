@@ -1,0 +1,10 @@
+app-editors/neovim gnu.stable gnu.lto gnu.fat-lto *.ofast
+app-emulation/libvirt llvm.lld
+app-emulation/qemu gnu.stable gnu.lto gnu.fat-lto
+dev-lang/python gnu.stable
+dev-libs/glib gnu.stable
+dev-util/glslang llvm.lld
+gui-wm/hyprland gnu.stable gnu.lto gnu.fat-lto
+sys-apps/sandbox llvm.lld
+sys-libs/glibc gnu.stable
+www-client/chromium llvm.lld

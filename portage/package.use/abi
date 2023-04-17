@@ -1,7 +1,0 @@
-dev-lang/rust abi_x86_32
-dev-libs/libpcre2 abi_x86_32
-sys-apps/systemd-utils abi_x86_32
-sys-libs/libcap abi_x86_32
-sys-libs/pam abi_x86_32
-virtual/libintl abi_x86_32
-x11-drivers/nvidia-drivers abi_x86_32
