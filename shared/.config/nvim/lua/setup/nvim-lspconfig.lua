@@ -16,8 +16,8 @@ local servers = {
     'clangd',
 	'html',
     'jsonls',
+	'lua_ls',
     'pyright',
-    'sumneko_lua',
     'sqlls',
     'rust_analyzer',
     'tsserver',
@@ -34,7 +34,7 @@ for _, lsp in ipairs(servers) do
 	}
 end
 
-lspconfig['sumneko_lua'].setup {
+lspconfig['lua_ls'].setup {
 	settings = {
 		Lua = {
 			runtime = {

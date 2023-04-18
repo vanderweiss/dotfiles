@@ -89,21 +89,31 @@ _G.packer_plugins = {
     path = "/home/acertig/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["colorbuddy.nvim"] = {
+    loaded = true,
+    path = "/home/acertig/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim",
+    url = "https://github.com/tjdevries/colorbuddy.nvim"
+  },
   ["emmet-vim"] = {
     loaded = true,
     path = "/home/acertig/.local/share/nvim/site/pack/packer/start/emmet-vim",
     url = "https://github.com/mattn/emmet-vim"
+  },
+  ["feline.nvim"] = {
+    config = { "require('setup/feline')" },
+    loaded = true,
+    path = "/home/acertig/.local/share/nvim/site/pack/packer/start/feline.nvim",
+    url = "https://github.com/feline-nvim/feline.nvim"
   },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/home/acertig/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
-  ["lualine.nvim"] = {
-    config = { "require('setup/lualine')" },
+  ["jellybeans-nvim"] = {
     loaded = true,
-    path = "/home/acertig/.local/share/nvim/site/pack/packer/start/lualine.nvim",
-    url = "https://github.com/nvim-lualine/lualine.nvim"
+    path = "/home/acertig/.local/share/nvim/site/pack/packer/start/jellybeans-nvim",
+    url = "https://github.com/metalelf0/jellybeans-nvim"
   },
   ["lush.nvim"] = {
     loaded = true,
@@ -120,6 +130,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/acertig/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["minimal.nvim"] = {
+    loaded = true,
+    path = "/home/acertig/.local/share/nvim/site/pack/packer/start/minimal.nvim",
+    url = "https://github.com/Yazeed1s/minimal.nvim"
   },
   ["nvim-cmp"] = {
     config = { "require('setup/nvim-cmp')" },
@@ -143,6 +158,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/acertig/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-noirbuddy"] = {
+    config = { "require('setup/nvim-noirbuddy')" },
+    loaded = true,
+    path = "/home/acertig/.local/share/nvim/site/pack/packer/start/nvim-noirbuddy",
+    url = "https://github.com/jesseleite/nvim-noirbuddy"
   },
   ["nvim-transparent"] = {
     config = { "require('setup/nvim-transparent')" },
@@ -169,34 +190,38 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: lualine.nvim
-time([[Config for lualine.nvim]], true)
-require('setup/lualine')
-time([[Config for lualine.nvim]], false)
--- Config for: nvim-treesitter
-time([[Config for nvim-treesitter]], true)
-require('setup/nvim-treesitter')
-time([[Config for nvim-treesitter]], false)
--- Config for: mason.nvim
-time([[Config for mason.nvim]], true)
-require('setup/mason')
-time([[Config for mason.nvim]], false)
--- Config for: nvim-transparent
-time([[Config for nvim-transparent]], true)
-require('setup/nvim-transparent')
-time([[Config for nvim-transparent]], false)
--- Config for: nvim-cmp
-time([[Config for nvim-cmp]], true)
-require('setup/nvim-cmp')
-time([[Config for nvim-cmp]], false)
--- Config for: nvim-colorizer.lua
-time([[Config for nvim-colorizer.lua]], true)
-require('setup/nvim-colorizer')
-time([[Config for nvim-colorizer.lua]], false)
 -- Config for: nvim-lspconfig
 time([[Config for nvim-lspconfig]], true)
 require('setup/nvim-lspconfig')
 time([[Config for nvim-lspconfig]], false)
+-- Config for: nvim-transparent
+time([[Config for nvim-transparent]], true)
+require('setup/nvim-transparent')
+time([[Config for nvim-transparent]], false)
+-- Config for: mason.nvim
+time([[Config for mason.nvim]], true)
+require('setup/mason')
+time([[Config for mason.nvim]], false)
+-- Config for: nvim-treesitter
+time([[Config for nvim-treesitter]], true)
+require('setup/nvim-treesitter')
+time([[Config for nvim-treesitter]], false)
+-- Config for: feline.nvim
+time([[Config for feline.nvim]], true)
+require('setup/feline')
+time([[Config for feline.nvim]], false)
+-- Config for: nvim-colorizer.lua
+time([[Config for nvim-colorizer.lua]], true)
+require('setup/nvim-colorizer')
+time([[Config for nvim-colorizer.lua]], false)
+-- Config for: nvim-cmp
+time([[Config for nvim-cmp]], true)
+require('setup/nvim-cmp')
+time([[Config for nvim-cmp]], false)
+-- Config for: nvim-noirbuddy
+time([[Config for nvim-noirbuddy]], true)
+require('setup/nvim-noirbuddy')
+time([[Config for nvim-noirbuddy]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

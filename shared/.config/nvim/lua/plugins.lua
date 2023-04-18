@@ -52,9 +52,15 @@ return require('packer').startup(function(use)
 		config = setup('nvim-treesitter')
 	}
 
-	use {
+	--[[use {
 		'nvim-lualine/lualine.nvim',
 		config = setup('lualine')
+		
+	}]]--
+
+	use {
+		'feline-nvim/feline.nvim',
+		config = setup('feline')
 	}
 
 	use 'lukas-reineke/indent-blankline.nvim'	
@@ -70,9 +76,19 @@ return require('packer').startup(function(use)
 		config = setup('nvim-transparent')
 	}
 
+	use {
+		"jesseleite/nvim-noirbuddy",
+		config = setup('nvim-noirbuddy'),
+		requires = { "tjdevries/colorbuddy.nvim", branch = "dev" }
+	}	
+
 	use 'rktjmp/lush.nvim'
 	use 'kabouzeid/nvim-jellybeans'
-		
+	use 'metalelf0/jellybeans-nvim'
+	use 'Yazeed1s/minimal.nvim'
+
+	
+
 	-- Bootstrapping
 
 	if packer_bootstrap then

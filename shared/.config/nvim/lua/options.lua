@@ -17,8 +17,8 @@ vim.g.signcolum = 'no'
 vim.g.nobackup = true
 vim.g.nowritebackup = true
 
+vim.cmd('set noshowmode')
 vim.cmd('set cursorline cursorlineopt=number')
-vim.cmd('colorscheme jellybeans')
 
 local keymap = vim.api.nvim_set_keymap
 
