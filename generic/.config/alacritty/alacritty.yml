@@ -3,7 +3,7 @@ window:
     columns: 72
     lines: 24
 
-  opacity: 0.75
+  opacity: 0.9
 
   padding:
     x: 12
@@ -15,26 +15,30 @@ window:
 
 scrolling:
   history: 5000
-  multiplier: 5
+  multiplier: 4
 
 font:
   normal:
-    family: Roboto Mono
+    family: BPmono
     style: Regular
 
   bold:
-    family: Roboto Mono
+    family: BPmono
     style: Bold
 
   italic:
-    family: Roboto Mono
-    style: Italic
+    family: BPmono
+    style: Regular
 
   bold_italic:
-    family: Roboto Mono
-    style: Bold Italic
+    family: BPmono
+    style: Bold
 
-  size: 11
+  size: 10
+
+  offset: 
+    x: 0
+    y: 1
 
   builtin_box_drawing: true
   

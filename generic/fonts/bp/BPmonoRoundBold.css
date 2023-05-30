@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'BPmonoRound';
+    src: url('BPmonoRoundBold.eot'); /* IE9 Compat Modes */
+    src: url('BPmonoRoundBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('BPmonoRoundBold.woff') format('woff'), /* Modern Browsers */
+         url('BPmonoRoundBold.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
