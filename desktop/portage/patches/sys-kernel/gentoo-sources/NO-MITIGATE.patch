@@ -1,0 +1,292 @@
+From 8327044e80bbddfa61c7cae5beb970cce7e315f8 Mon Sep 17 00:00:00 2001
+From: elysian <tsujianii@tuta.io>
+Date: Sun, 11 Dec 2022 23:08:06 +0800
+Subject: [PATCH] mitigationn't
+
+---
+ arch/x86/kernel/cpu/bugs.c | 36 ++++++++++++++++++++++++++++++++++++
+ 1 file changed, 36 insertions(+)
+
+diff --git a/arch/x86/kernel/cpu/bugs.c b/arch/x86/kernel/cpu/bugs.c
+index 06ad95ae78cebc..eef9b2be4a2206 100644
+--- a/arch/x86/kernel/cpu/bugs.c
++++ b/arch/x86/kernel/cpu/bugs.c
+@@ -36,6 +36,7 @@
+ 
+ #include "cpu.h"
+ 
++#ifdef CONFIG_SPECULATION_MITIGATIONS
+ static void __init spectre_v1_select_mitigation(void);
+ static void __init spectre_v2_select_mitigation(void);
+ static void __init retbleed_select_mitigation(void);
+@@ -49,6 +50,7 @@ static void __init taa_select_mitigation(void);
+ static void __init mmio_select_mitigation(void);
+ static void __init srbds_select_mitigation(void);
+ static void __init l1d_flush_select_mitigation(void);
++#endif
+ 
+ /* The base value of the SPEC_CTRL MSR without task-specific bits set */
+ u64 x86_spec_ctrl_base;
+@@ -139,6 +141,7 @@ void __init check_bugs(void)
+ 		print_cpu_info(&boot_cpu_data);
+ 	}
+ 
++#ifdef CONFIG_SPECULATION_MITIGATIONS
+ 	/*
+ 	 * Read the SPEC_CTRL MSR to account for reserved bits which may
+ 	 * have unknown values. AMD64_LS_CFG MSR is cached in the early AMD
+@@ -167,6 +170,7 @@ void __init check_bugs(void)
+ 	md_clear_select_mitigation();
+ 	srbds_select_mitigation();
+ 	l1d_flush_select_mitigation();
++#endif
+ 
+ 	arch_smt_update();
+ 
+@@ -267,6 +271,7 @@ static const char * const mds_strings[] = {
+ 	[MDS_MITIGATION_VMWERV]	= "Vulnerable: Clear CPU buffers attempted, no microcode",
+ };
+ 
++#ifdef CONFIG_SPECULATION_MITIGATIONS
+ static void __init mds_select_mitigation(void)
+ {
+ 	if (!boot_cpu_has_bug(X86_BUG_MDS) || cpu_mitigations_off()) {
+@@ -285,6 +290,7 @@ static void __init mds_select_mitigation(void)
+ 			cpu_smt_disable(false);
+ 	}
+ }
++#endif
+ 
+ static int __init mds_cmdline(char *str)
+ {
+@@ -328,6 +334,7 @@ static const char * const taa_strings[] = {
+ 	[TAA_MITIGATION_TSX_DISABLED]	= "Mitigation: TSX disabled",
+ };
+ 
++#ifdef CONFIG_SPECULATION_MITIGATIONS
+ static void __init taa_select_mitigation(void)
+ {
+ 	u64 ia32_cap;
+@@ -387,6 +394,7 @@ static void __init taa_select_mitigation(void)
+ 	if (taa_nosmt || cpu_mitigations_auto_nosmt())
+ 		cpu_smt_disable(false);
+ }
++#endif
+ 
+ static int __init tsx_async_abort_parse_cmdline(char *str)
+ {
+@@ -428,6 +436,7 @@ static const char * const mmio_strings[] = {
+ 	[MMIO_MITIGATION_VERW]		= "Mitigation: Clear CPU buffers",
+ };
+ 
++#ifdef CONFIG_SPECULATION_MITIGATIONS
+ static void __init mmio_select_mitigation(void)
+ {
+ 	u64 ia32_cap;
+@@ -480,6 +489,7 @@ static void __init mmio_select_mitigation(void)
+ 	if (mmio_nosmt || cpu_mitigations_auto_nosmt())
+ 		cpu_smt_disable(false);
+ }
++#endif
+ 
+ static int __init mmio_stale_data_parse_cmdline(char *str)
+ {
+@@ -505,6 +515,7 @@ early_param("mmio_stale_data", mmio_stale_data_parse_cmdline);
+ #undef pr_fmt
+ #define pr_fmt(fmt)     "" fmt
+ 
++#ifdef CONFIG_SPECULATION_MITIGATIONS
+ static void __init md_clear_update_mitigation(void)
+ {
+ 	if (cpu_mitigations_off())
+@@ -543,6 +554,7 @@ static void __init md_clear_update_mitigation(void)
+ 		pr_info("MMIO Stale Data: Unknown: No mitigations\n");
+ }
+ 
++
+ static void __init md_clear_select_mitigation(void)
+ {
+ 	mds_select_mitigation();
+@@ -556,6 +568,7 @@ static void __init md_clear_select_mitigation(void)
+ 	 */
+ 	md_clear_update_mitigation();
+ }
++#endif
+ 
+ #undef pr_fmt
+ #define pr_fmt(fmt)	"SRBDS: " fmt
+@@ -617,6 +630,7 @@ void update_srbds_msr(void)
+ 	wrmsrl(MSR_IA32_MCU_OPT_CTRL, mcu_ctrl);
+ }
+ 
++#ifdef CONFIG_SPECULATION_MITIGATIONS
+ static void __init srbds_select_mitigation(void)
+ {
+ 	u64 ia32_cap;
+@@ -643,6 +657,7 @@ static void __init srbds_select_mitigation(void)
+ 	update_srbds_msr();
+ 	pr_info("%s\n", srbds_strings[srbds_mitigation]);
+ }
++#endif
+ 
+ static int __init srbds_parse_cmdline(char *str)
+ {
+@@ -667,6 +682,8 @@ enum l1d_flush_mitigations {
+ 
+ static enum l1d_flush_mitigations l1d_flush_mitigation __initdata = L1D_FLUSH_OFF;
+ 
++
++#ifdef CONFIG_SPECULATION_MITIGATIONS
+ static void __init l1d_flush_select_mitigation(void)
+ {
+ 	if (!l1d_flush_mitigation || !boot_cpu_has(X86_FEATURE_FLUSH_L1D))
+@@ -675,6 +692,7 @@ static void __init l1d_flush_select_mitigation(void)
+ 	static_branch_enable(&switch_mm_cond_l1d_flush);
+ 	pr_info("Conditional flush on switch_mm() enabled\n");
+ }
++#endif
+ 
+ static int __init l1d_flush_parse_cmdline(char *str)
+ {
+@@ -705,6 +723,7 @@ static const char * const spectre_v1_strings[] = {
+  * Does SMAP provide full mitigation against speculative kernel access to
+  * userspace?
+  */
++#ifdef CONFIG_SPECULATION_MITIGATIONS
+ static bool smap_works_speculatively(void)
+ {
+ 	if (!boot_cpu_has(X86_FEATURE_SMAP))
+@@ -767,6 +786,7 @@ static void __init spectre_v1_select_mitigation(void)
+ 
+ 	pr_info("%s\n", spectre_v1_strings[spectre_v1_mitigation]);
+ }
++#endif
+ 
+ static int __init nospectre_v1_cmdline(char *str)
+ {
+@@ -847,6 +867,7 @@ early_param("retbleed", retbleed_parse_cmdline);
+ #define RETBLEED_UNTRAIN_MSG "WARNING: BTB untrained return thunk mitigation is only effective on AMD/Hygon!\n"
+ #define RETBLEED_INTEL_MSG "WARNING: Spectre v2 mitigation leaves CPU vulnerable to RETBleed attacks, data leaks possible!\n"
+ 
++#ifdef CONFIG_SPECULATION_MITIGATIONS
+ static void __init retbleed_select_mitigation(void)
+ {
+ 	bool mitigate_smt = false;
+@@ -945,6 +966,7 @@ static void __init retbleed_select_mitigation(void)
+ 
+ 	pr_info("%s\n", retbleed_strings[retbleed_mitigation]);
+ }
++#endif
+ 
+ #undef pr_fmt
+ #define pr_fmt(fmt)     "Spectre V2 : " fmt
+@@ -1055,6 +1077,7 @@ static const struct {
+ 	{ "seccomp,ibpb",	SPECTRE_V2_USER_CMD_SECCOMP_IBPB,	false },
+ };
+ 
++#ifdef CONFIG_SPECULATION_MITIGATIONS
+ static void __init spec_v2_user_print_cond(const char *reason, bool secure)
+ {
+ 	if (boot_cpu_has_bug(X86_BUG_SPECTRE_V2) != secure)
+@@ -1094,6 +1117,7 @@ spectre_v2_parse_user_cmdline(void)
+ 	pr_err("Unknown user space protection option (%s). Switching to AUTO select\n", arg);
+ 	return SPECTRE_V2_USER_CMD_AUTO;
+ }
++#endif
+ 
+ static inline bool spectre_v2_in_ibrs_mode(enum spectre_v2_mitigation mode)
+ {
+@@ -1103,6 +1127,7 @@ static inline bool spectre_v2_in_ibrs_mode(enum spectre_v2_mitigation mode)
+ 	       mode == SPECTRE_V2_EIBRS_LFENCE;
+ }
+ 
++#ifdef CONFIG_SPECULATION_MITIGATIONS
+ static void __init
+ spectre_v2_user_select_mitigation(void)
+ {
+@@ -1195,6 +1220,7 @@ spectre_v2_user_select_mitigation(void)
+ set_mode:
+ 	pr_info("%s\n", spectre_v2_user_strings[mode]);
+ }
++#endif
+ 
+ static const char * const spectre_v2_strings[] = {
+ 	[SPECTRE_V2_NONE]			= "Vulnerable",
+@@ -1224,6 +1250,7 @@ static const struct {
+ 	{ "ibrs",		SPECTRE_V2_CMD_IBRS,              false },
+ };
+ 
++#ifdef CONFIG_SPECULATION_MITIGATIONS
+ static void __init spec_v2_print_cond(const char *reason, bool secure)
+ {
+ 	if (boot_cpu_has_bug(X86_BUG_SPECTRE_V2) != secure)
+@@ -1599,11 +1626,13 @@ static void update_indir_branch_cond(void)
+ 	else
+ 		static_branch_disable(&switch_to_cond_stibp);
+ }
++#endif
+ 
+ #undef pr_fmt
+ #define pr_fmt(fmt) fmt
+ 
+ /* Update the static key controlling the MDS CPU buffer clear in idle */
++#ifdef CONFIG_SPECULATION_MITIGATIONS
+ static void update_mds_branch_idle(void)
+ {
+ 	u64 ia32_cap = x86_read_arch_cap_msr();
+@@ -1626,6 +1655,7 @@ static void update_mds_branch_idle(void)
+ 		static_branch_disable(&mds_idle_clear);
+ 	}
+ }
++#endif
+ 
+ #define MDS_MSG_SMT "MDS CPU bug present and SMT on, data leak possible. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/mds.html for more details.\n"
+ #define TAA_MSG_SMT "TAA CPU bug present and SMT on, data leak possible. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/tsx_async_abort.html for more details.\n"
+@@ -1633,6 +1663,7 @@ static void update_mds_branch_idle(void)
+ 
+ void cpu_bugs_smt_update(void)
+ {
++#ifdef CONFIG_SPECULATION_MITIGATIONS
+ 	mutex_lock(&spec_ctrl_mutex);
+ 
+ 	if (sched_smt_active() && unprivileged_ebpf_enabled() &&
+@@ -1685,6 +1716,7 @@ void cpu_bugs_smt_update(void)
+ 	}
+ 
+ 	mutex_unlock(&spec_ctrl_mutex);
++#endif
+ }
+ 
+ #undef pr_fmt
+@@ -1719,6 +1751,7 @@ static const struct {
+ 	{ "seccomp",	SPEC_STORE_BYPASS_CMD_SECCOMP }, /* Disable Speculative Store Bypass via prctl and seccomp */
+ };
+ 
++#ifdef CONFIG_SPECULATION_MITIGATIONS
+ static enum ssb_mitigation_cmd __init ssb_parse_cmdline(void)
+ {
+ 	enum ssb_mitigation_cmd cmd = SPEC_STORE_BYPASS_CMD_AUTO;
+@@ -1818,6 +1851,7 @@ static void ssb_select_mitigation(void)
+ 	if (boot_cpu_has_bug(X86_BUG_SPEC_STORE_BYPASS))
+ 		pr_info("%s\n", ssb_strings[ssb_mode]);
+ }
++#endif
+ 
+ #undef pr_fmt
+ #define pr_fmt(fmt)     "Speculation prctl: " fmt
+@@ -2089,6 +2123,7 @@ EXPORT_SYMBOL_GPL(l1tf_vmx_mitigation);
+  * instead of the reported physical bits and adjust them on the affected
+  * machines to 44bit if the reported bits are less than 44.
+  */
++#ifdef CONFIG_SPECULATION_MITIGATIONS
+ static void override_cache_bits(struct cpuinfo_x86 *c)
+ {
+ 	if (c->x86 != 6)
+@@ -2160,6 +2195,7 @@ static void __init l1tf_select_mitigation(void)
+ 
+ 	setup_force_cpu_cap(X86_FEATURE_L1TF_PTEINV);
+ }
++#endif
+ 
+ static int __init l1tf_cmdline(char *str)
+ {

@@ -27,10 +27,12 @@ www-client/chromium screencast vaapi widevine
 www-plugins/chrome-binary-plugins widevine
 
 # QEMU emulation
-app-emulation/libvirt qemu
-app-emulation/qemu static-user
+app-emulation/libvirt pcap qemu virt-network 
+app-emulation/qemu opengl spice static-user usbredir
+app-emulation/virt-manager gui
 dev-libs/glib static-libs
 dev-libs/libpcre2 static-libs
+net-misc/spice-gtk usbredir
 sys-apps/attr static-libs
 sys-libs/glibc static-libs
 sys-libs/llvm-libunwind static-libs
@@ -39,11 +41,15 @@ sys-libs/zlib static-libs
 # Qt
 dev-qt/qtgui egl
 dev-qt/qtwebchannel qml
-dev-qt/qtwebengine widgets
+dev-qt/qtwebengine designer widgets
+
+# Kernel
+sys-kernel/cachyos-sources::ROKO__ prjc symlink -bore -build -eevdf -high-hz -latency -tt
 
 # Open source DRM and Wayland integration
 x11-drivers/nvidia-drivers kernel-open
 
 # X11/Wayland
-gui-libs/wlroots x11-backend
+gui-libs/wlroots vulkan x11-backend
+sys-apps/xdg-desktop-portal screencast
 x11-base/xorg-server xvfb

@@ -1,0 +1,11 @@
+--- a/init/Kconfig	2022-05-06 16:27:27.288016037 -0500
++++ b/init/Kconfig	2022-05-06 16:28:01.711058950 -0500
+@@ -1463,7 +1463,7 @@
+ menuconfig EXPERT
+ 	bool "Configure standard kernel features (expert users)"
+ 	# Unhide debug options, to make the on-by-default options visible
+-	select DEBUG_KERNEL
++	#
+ 	help
+ 	  This option allows certain base kernel options and settings
+ 	  to be disabled or tweaked. This is for specialized

@@ -1,4 +1,5 @@
 dev-lang/rust abi_x86_32
+dev-lang/rust-bin abi_x86_32
 dev-libs/libpcre2 abi_x86_32
 media-libs/libglvnd abi_x86_32
 net-dns/c-ares abi_x86_32

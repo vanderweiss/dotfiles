@@ -1,1 +1,3 @@
+dev-lang/rust *.persist
+dev-util/nvidia-cuda-toolkit *.persist
 www-client/chromium pkg.chromium *.persist
