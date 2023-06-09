@@ -1,0 +1,56 @@
+theme = "atelier"
+
+[editor]
+auto-info	= false
+bufferline = "never"
+completion-trigger-len = 4
+gutters = ["line-numbers", "spacer"]
+idle-timeout = 1500
+line-number = "relative"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+deduplicate-links = false
+hidden = false
+max-depth = 5
+
+[editor.indent-guides]
+render = true
+character = "|" 
+skip-levels = 1
+
+[editor.lsp]
+auto-signature-help	= false
+display-inlay-hints = false
+display-messages = true
+
+[editor.statusline]
+left = ["spacer", "mode", "spacer", "spinner"]
+center = ["file-name", "file-modification-indicator"]
+right = ["diagnostics", "position", "position-percentage", "spacer"]
+separator = "|"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[keys.normal]
+S-up = "page_up"
+S-down = "page_down"
+S-left = "move_prev_word_start"
+S-right = "move_next_word_start"
+
+[keys.normal.space]
+f = "file_picker_in_current_directory"
+F = "file_picker"
+
+[keys.insert]
+S-left = "move_prev_word_start"
+S-right = "move_next_word_start"
+
+[keys.select]
+S-left = "move_prev_word_start"
+S-right = "move_next_word_start"
