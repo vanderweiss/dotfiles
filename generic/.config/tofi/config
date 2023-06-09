@@ -1,4 +1,4 @@
-font = "BPmono"
+font = "Roboto Mono"
 font-size = 13
 font-features = "liga 0"
 font-variations = "normal"
@@ -88,8 +88,8 @@ margin-right = 0
 hide-cursor = false
 text-cursor = false
 
-history = true
-history-file = ~/.cache/tofi/history
+history = false
+#history-file = ~/.cache/tofi/history
 
 fuzzy-match = false
 require-match = true
