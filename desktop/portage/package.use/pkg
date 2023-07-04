@@ -12,6 +12,7 @@ media-libs/libvpx postproc
 media-sound/pulseaudio -daemon
 media-video/pipewire sound-server
 net-dns/dnsmasq script
+net-libs/gnutls pkcs11 tools
 net-libs/nodejs inspector
 net-misc/networkmanager -lto
 sys-apps/openrc sysv-utils
@@ -23,8 +24,11 @@ sys-libs/zlib minizip
 x11-base/xorg-server xvfb
 
 # Chromium
-www-client/chromium screencast vaapi widevine
+www-client/ungoogled-chromium -pgo -system-ffmpeg optimize-thinlto optimize-webui screencast thinlto vaapi widevine
 www-plugins/chrome-binary-plugins widevine
+
+# Gamer!!!!
+sys-libs/glibc hash-sysv-compat
 
 # QEMU emulation
 app-emulation/libvirt pcap qemu virt-network 
@@ -39,7 +43,11 @@ sys-libs/llvm-libunwind static-libs
 sys-libs/zlib static-libs
 
 # Qt
+dev-qt/qtbase egl opengl
+dev-qt/qtcharts qml
+dev-qt/qtdeclarative opengl
 dev-qt/qtgui egl
+dev-qt/linguist-tools qml
 dev-qt/qtwebchannel qml
 dev-qt/qtwebengine designer widgets
 
@@ -51,5 +59,6 @@ x11-drivers/nvidia-drivers kernel-open
 
 # X11/Wayland
 gui-libs/wlroots vulkan x11-backend
+media-libs/mesa vulkan vulkan-overlay
 sys-apps/xdg-desktop-portal screencast
 x11-base/xorg-server xvfb
