@@ -1,1 +1,1 @@
-repo for storing settings on both my desktop and laptops
+Repository of assets and configuration files for my systems.

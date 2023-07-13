@@ -348,3 +348,362 @@ Use --utf-force argument to force start if you're sure your terminal can handle 
 
 2023/05/29 (15:53:11) | ===> btop++ v.1.2.13
 2023/05/29 (15:53:11) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+
+2023/05/29 (23:12:26) | ===> btop++ v.1.2.13
+2023/05/29 (23:12:26) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+
+2023/05/30 (00:27:58) | ===> btop++ v.1.2.13
+2023/05/30 (00:27:58) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+
+2023/05/30 (01:13:56) | ===> btop++ v.1.2.13
+2023/05/30 (01:13:56) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+
+2023/05/30 (01:53:46) | ===> btop++ v.1.2.13
+2023/05/30 (01:53:46) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+
+2023/05/30 (01:54:46) | ===> btop++ v.1.2.13
+2023/05/30 (01:54:46) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+
+2023/05/30 (15:50:50) | ===> btop++ v.1.2.13
+2023/05/30 (15:50:50) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+
+2023/05/31 (19:41:20) | ===> btop++ v.1.2.13
+2023/05/31 (19:41:20) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+
+2023/05/31 (22:11:08) | ===> btop++ v.1.2.13
+2023/05/31 (22:11:08) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+
+2023/06/02 (22:01:59) | ===> btop++ v.1.2.13
+2023/06/02 (22:01:59) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+
+2023/06/02 (22:26:45) | ===> btop++ v.1.2.13
+2023/06/02 (22:26:45) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+
+2023/06/02 (22:44:03) | ===> btop++ v.1.2.13
+2023/06/02 (22:44:03) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+
+2023/06/03 (04:04:02) | ===> btop++ v.1.2.13
+2023/06/03 (04:04:02) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+
+2023/06/03 (23:31:49) | ===> btop++ v.1.2.13
+2023/06/03 (23:31:49) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+
+2023/06/03 (23:41:39) | ===> btop++ v.1.2.13
+2023/06/03 (23:41:39) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+
+2023/06/04 (17:55:05) | ===> btop++ v.1.2.13
+2023/06/04 (17:55:05) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+
+2023/06/04 (17:55:49) | ===> btop++ v.1.2.13
+2023/06/04 (17:55:49) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+
+2023/06/04 (19:15:23) | ===> btop++ v.1.2.13
+2023/06/04 (19:15:23) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+
+2023/06/04 (19:15:31) | ===> btop++ v.1.2.13
+2023/06/04 (19:15:31) | ERROR: No UTF-8 locale detected!
+Use --utf-force argument to force start if you're sure your terminal can handle it.
+
+2023/06/04 (19:15:37) | ===> btop++ v.1.2.13
+2023/06/04 (19:15:37) | WARNING: No UTF-8 locale detected! Forcing start with --utf-force argument.
+2023/06/04 (19:15:37) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+
+2023/06/05 (19:00:42) | ===> btop++ v.1.2.13
+2023/06/05 (19:00:42) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+
+2023/06/05 (19:33:14) | ===> btop++ v.1.2.13
+2023/06/05 (19:33:14) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+
+2023/06/07 (18:32:48) | ===> btop++ v.1.2.13
+2023/06/07 (18:32:48) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+
+2023/06/07 (19:07:52) | ===> btop++ v.1.2.13
+2023/06/07 (19:07:52) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+
+2023/06/10 (07:18:32) | ===> btop++ v.1.2.13
+2023/06/10 (07:18:32) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+
+2023/06/10 (09:18:37) | ===> btop++ v.1.2.13
+2023/06/10 (09:18:37) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+
+2023/06/10 (09:27:20) | ===> btop++ v.1.2.13
+2023/06/10 (09:27:20) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+2023/06/10 (09:27:27) | INFO: Logger set to INFO
+2023/06/10 (09:27:27) | INFO: Logger set to DEBUG
+2023/06/10 (09:27:49) | DEBUG: Loading theme file: /usr/local/share/btop/themes/whiteout.theme
+2023/06/10 (09:27:49) | DEBUG: Loading theme file: /usr/local/share/btop/themes/tomorrow-night.theme
+2023/06/10 (09:27:49) | DEBUG: Loading theme file: /usr/local/share/btop/themes/tokyo-storm.theme
+2023/06/10 (09:27:50) | DEBUG: Loading theme file: /usr/local/share/btop/themes/tokyo-night.theme
+2023/06/10 (09:27:50) | DEBUG: Loading theme file: /usr/local/share/btop/themes/solarized_light.theme
+2023/06/10 (09:27:50) | DEBUG: Loading theme file: /usr/local/share/btop/themes/solarized_dark.theme
+2023/06/10 (09:27:58) | DEBUG: Loading theme file: /usr/local/share/btop/themes/solarized_dark.theme
+2023/06/10 (09:28:04) | DEBUG: Loading theme file: /usr/local/share/btop/themes/paper.theme
+2023/06/10 (09:28:08) | DEBUG: Loading theme file: /usr/local/share/btop/themes/onedark.theme
+2023/06/10 (09:28:13) | DEBUG: Loading theme file: /usr/local/share/btop/themes/nord.theme
+2023/06/10 (09:28:16) | DEBUG: Loading theme file: /usr/local/share/btop/themes/night-owl.theme
+2023/06/10 (09:28:20) | DEBUG: Loading theme file: /usr/local/share/btop/themes/monokai.theme
+2023/06/10 (09:28:23) | DEBUG: Loading theme file: /usr/local/share/btop/themes/matcha-dark-sea.theme
+2023/06/10 (09:28:25) | DEBUG: Loading theme file: /usr/local/share/btop/themes/kyli0x.theme
+2023/06/10 (09:28:27) | DEBUG: Loading theme file: /usr/local/share/btop/themes/gruvbox_material_dark.theme
+2023/06/10 (09:28:30) | DEBUG: Loading theme file: /usr/local/share/btop/themes/gruvbox_dark_v2.theme
+2023/06/10 (09:28:32) | DEBUG: Loading theme file: /usr/local/share/btop/themes/gruvbox_dark.theme
+2023/06/10 (09:29:54) | DEBUG: Loading theme file: /usr/local/share/btop/themes/gruvbox_dark_v2.theme
+2023/06/10 (09:29:55) | DEBUG: Loading theme file: /usr/local/share/btop/themes/gruvbox_dark.theme
+2023/06/10 (09:29:55) | DEBUG: Loading theme file: /usr/local/share/btop/themes/greyscale.theme
+2023/06/10 (09:29:58) | DEBUG: Loading theme file: /usr/local/share/btop/themes/flat-remix.theme
+2023/06/10 (09:30:00) | DEBUG: Loading theme file: /usr/local/share/btop/themes/flat-remix-light.theme
+2023/06/10 (09:30:02) | DEBUG: Loading theme file: /usr/local/share/btop/themes/everforest-dark-hard.theme
+2023/06/10 (09:30:04) | DEBUG: Loading theme file: /usr/local/share/btop/themes/elementarish.theme
+2023/06/10 (09:30:07) | DEBUG: Loading theme file: /usr/local/share/btop/themes/dusklight.theme
+2023/06/10 (09:30:09) | DEBUG: Loading theme file: /usr/local/share/btop/themes/dracula.theme
+2023/06/10 (09:30:31) | DEBUG: Loading theme file: /usr/local/share/btop/themes/ayu.theme
+2023/06/10 (09:30:33) | DEBUG: Loading theme file: /usr/local/share/btop/themes/adapta.theme
+2023/06/10 (09:30:36) | DEBUG: Loading theme file: /usr/local/share/btop/themes/HotPurpleTrafficLight.theme
+2023/06/10 (09:34:45) | DEBUG: Loading theme file: /usr/local/share/btop/themes/HotPurpleTrafficLight.theme
+2023/06/10 (09:38:17) | DEBUG: Writing new config file
+2023/06/10 (09:38:17) | INFO: Quitting! Runtime: 00:10:57
+
+2023/06/11 (15:57:45) | ===> btop++ v.1.2.13
+2023/06/11 (15:57:45) | INFO: Logger set to DEBUG
+2023/06/11 (15:57:45) | DEBUG: Using locale en_US.utf8
+2023/06/11 (15:57:45) | INFO: Running on /dev/pts/1
+2023/06/11 (15:57:45) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+2023/06/11 (15:57:47) | INFO: Quitting! Runtime: 00:00:02
+
+2023/06/11 (15:57:50) | ===> btop++ v.1.2.13
+2023/06/11 (15:57:50) | INFO: Logger set to DEBUG
+2023/06/11 (15:57:50) | DEBUG: Using locale en_US.utf8
+2023/06/11 (15:57:50) | INFO: Running on /dev/pts/1
+2023/06/11 (15:57:50) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+2023/06/11 (15:57:51) | INFO: Quitting! Runtime: 00:00:01
+
+2023/06/11 (15:57:52) | ===> btop++ v.1.2.13
+2023/06/11 (15:57:52) | INFO: Logger set to DEBUG
+2023/06/11 (15:57:52) | DEBUG: Using locale en_US.utf8
+2023/06/11 (15:57:52) | INFO: Running on /dev/pts/1
+2023/06/11 (15:57:52) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+2023/06/11 (15:58:00) | DEBUG: Writing new config file
+2023/06/11 (15:58:00) | INFO: Quitting! Runtime: 00:00:08
+
+2023/06/12 (00:54:07) | ===> btop++ v.1.2.13
+2023/06/12 (00:54:07) | INFO: Logger set to DEBUG
+2023/06/12 (00:54:07) | DEBUG: Using locale en_US.utf8
+2023/06/12 (00:54:07) | INFO: Running on /dev/pts/3
+2023/06/12 (00:54:07) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+2023/06/12 (00:54:13) | INFO: Quitting! Runtime: 00:00:06
+
+2023/06/12 (22:51:36) | ===> btop++ v.1.2.13
+2023/06/12 (22:51:36) | INFO: Logger set to DEBUG
+2023/06/12 (22:51:36) | DEBUG: Using locale en_US.utf8
+2023/06/12 (22:51:36) | INFO: Running on /dev/pts/2
+2023/06/12 (22:51:36) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+2023/06/12 (22:51:42) | INFO: Quitting! Runtime: 00:00:06
+
+2023/06/12 (22:56:27) | ===> btop++ v.1.2.13
+2023/06/12 (22:56:27) | INFO: Logger set to DEBUG
+2023/06/12 (22:56:27) | DEBUG: Using locale en_US.utf8
+2023/06/12 (22:56:27) | INFO: Running on /dev/pts/2
+2023/06/12 (22:56:27) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+2023/06/12 (22:57:18) | INFO: Quitting! Runtime: 00:00:51
+
+2023/06/12 (22:57:20) | ===> btop++ v.1.2.13
+2023/06/12 (22:57:20) | INFO: Logger set to DEBUG
+2023/06/12 (22:57:20) | DEBUG: Using locale en_US.utf8
+2023/06/12 (22:57:20) | INFO: Running on /dev/pts/2
+2023/06/12 (22:57:20) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+2023/06/12 (23:56:37) | INFO: Quitting! Runtime: 00:59:17
+
+2023/06/12 (23:57:58) | ===> btop++ v.1.2.13
+2023/06/12 (23:57:58) | INFO: Logger set to DEBUG
+2023/06/12 (23:57:58) | DEBUG: Using locale en_US.utf8
+2023/06/12 (23:57:58) | INFO: Running on /dev/pts/2
+2023/06/12 (23:57:58) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+2023/06/12 (23:59:09) | INFO: Quitting! Runtime: 00:01:11
+
+2023/06/13 (00:45:33) | ===> btop++ v.1.2.13
+2023/06/13 (00:45:33) | INFO: Logger set to DEBUG
+2023/06/13 (00:45:33) | DEBUG: Using locale en_US.utf8
+2023/06/13 (00:45:33) | INFO: Running on /dev/pts/2
+2023/06/13 (00:45:33) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+2023/06/13 (05:41:25) | INFO: Quitting! Runtime: 04:55:52
+
+2023/06/13 (05:41:26) | ===> btop++ v.1.2.13
+2023/06/13 (05:41:26) | INFO: Logger set to DEBUG
+2023/06/13 (05:41:26) | DEBUG: Using locale en_US.utf8
+2023/06/13 (05:41:26) | INFO: Running on /dev/pts/2
+2023/06/13 (05:41:26) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+2023/06/13 (07:27:20) | INFO: Quitting! Runtime: 01:45:54
+
+2023/06/13 (16:51:10) | ===> btop++ v.1.2.13
+2023/06/13 (16:51:10) | INFO: Logger set to DEBUG
+2023/06/13 (16:51:10) | DEBUG: Using locale en_US.utf8
+2023/06/13 (16:51:10) | INFO: Running on /dev/pts/2
+2023/06/13 (16:51:10) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+
+2023/06/13 (19:04:16) | ===> btop++ v.1.2.13
+2023/06/13 (19:04:16) | INFO: Logger set to DEBUG
+2023/06/13 (19:04:16) | DEBUG: Using locale en_US.utf8
+2023/06/13 (19:04:16) | INFO: Running on /dev/pts/0
+2023/06/13 (19:04:16) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+2023/06/15 (15:37:56) | DEBUG: Writing new config file
+2023/06/15 (15:37:56) | INFO: Quitting! Runtime: 1d 20:33:40
+
+2023/06/16 (02:30:49) | ===> btop++ v.1.2.13
+2023/06/16 (02:30:49) | INFO: Logger set to DEBUG
+2023/06/16 (02:30:49) | DEBUG: Using locale en_US.utf8
+2023/06/16 (02:30:49) | INFO: Running on /dev/pts/0
+2023/06/16 (02:30:49) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+2023/06/17 (18:29:04) | DEBUG: Writing new config file
+2023/06/17 (18:29:04) | INFO: Quitting! Runtime: 1d 15:58:15
+
+2023/06/19 (14:58:13) | ===> btop++ v.1.2.13
+2023/06/19 (14:58:13) | INFO: Logger set to DEBUG
+2023/06/19 (14:58:13) | DEBUG: Using locale en_US.utf8
+2023/06/19 (14:58:13) | INFO: Running on /dev/tty3
+2023/06/19 (14:58:13) | INFO: Real tty detected: setting 16 color mode and using tty friendly graph symbols
+2023/06/19 (14:58:13) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+2023/06/19 (14:58:19) | INFO: Quitting! Runtime: 00:00:06
+
+2023/06/19 (20:06:43) | ===> btop++ v.1.2.13
+2023/06/19 (20:06:43) | INFO: Logger set to DEBUG
+2023/06/19 (20:06:43) | DEBUG: Using locale en_US.utf8
+2023/06/19 (20:06:43) | INFO: Running on /dev/pts/1
+2023/06/19 (20:06:43) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+2023/06/19 (20:06:54) | INFO: Quitting! Runtime: 00:00:11
+
+2023/06/19 (20:06:54) | ===> btop++ v.1.2.13
+2023/06/19 (20:06:54) | INFO: Logger set to DEBUG
+2023/06/19 (20:06:54) | DEBUG: Using locale en_US.utf8
+2023/06/19 (20:06:54) | INFO: Running on /dev/pts/1
+2023/06/19 (20:06:54) | WARNING: No good candidate for cpu sensor found, using random from all found sensors.
+2023/06/19 (20:08:49) | DEBUG: Loading theme file: /usr/local/share/btop/themes/HotPurpleTrafficLight.theme
+
+2023/06/19 (20:18:33) | ===> btop++ v.1.2.13
+2023/06/19 (20:18:33) | INFO: Logger set to DEBUG
+2023/06/19 (20:18:33) | DEBUG: Using locale en_US.utf8
+2023/06/19 (20:18:33) | INFO: Running on /dev/tty1
+2023/06/19 (20:18:33) | INFO: Real tty detected: setting 16 color mode and using tty friendly graph symbols
+2023/06/19 (20:18:54) | DEBUG: Writing new config file
+2023/06/19 (20:18:54) | INFO: Quitting! Runtime: 00:00:21
+
+2023/06/19 (20:21:02) | ===> btop++ v.1.2.13
+2023/06/19 (20:21:02) | INFO: Logger set to DEBUG
+2023/06/19 (20:21:02) | DEBUG: Using locale en_US.utf8
+2023/06/19 (20:21:02) | INFO: Running on /dev/pts/0
+2023/06/19 (20:21:15) | DEBUG: Loading theme file: /usr/local/share/btop/themes/HotPurpleTrafficLight.theme
+2023/06/19 (20:22:16) | DEBUG: Writing new config file
+2023/06/19 (20:22:16) | INFO: Quitting! Runtime: 00:01:14
+
+2023/06/19 (20:56:52) | ===> btop++ v.1.2.13
+2023/06/19 (20:56:52) | INFO: Logger set to DEBUG
+2023/06/19 (20:56:52) | DEBUG: Using locale en_US.utf8
+2023/06/19 (20:56:52) | INFO: Running on /dev/pts/0
+2023/06/19 (21:00:01) | DEBUG: Writing new config file
+2023/06/19 (21:00:01) | INFO: Quitting! Runtime: 00:03:09
+
+2023/06/19 (21:10:03) | ===> btop++ v.1.2.13
+2023/06/19 (21:10:03) | INFO: Logger set to DEBUG
+2023/06/19 (21:10:03) | DEBUG: Using locale en_US.utf8
+2023/06/19 (21:10:03) | INFO: Running on /dev/pts/1
+
+2023/06/20 (16:15:58) | ===> btop++ v.1.2.13
+2023/06/20 (16:15:58) | INFO: Logger set to DEBUG
+2023/06/20 (16:15:58) | DEBUG: Using locale en_US.utf8
+2023/06/20 (16:15:58) | INFO: Running on /dev/pts/0
+2023/06/20 (16:25:57) | INFO: Quitting! Runtime: 00:09:59
+
+2023/06/20 (20:20:37) | ===> btop++ v.1.2.13
+2023/06/20 (20:20:37) | INFO: Logger set to DEBUG
+2023/06/20 (20:20:37) | DEBUG: Using locale en_US.utf8
+2023/06/20 (20:20:37) | INFO: Running on /dev/pts/3
+2023/06/20 (20:20:38) | INFO: Quitting! Runtime: 00:00:01
+
+2023/06/22 (11:54:17) | ===> btop++ v.1.2.13
+2023/06/22 (11:54:17) | INFO: Logger set to DEBUG
+2023/06/22 (11:54:17) | DEBUG: Using locale en_US.utf8
+2023/06/22 (11:54:17) | INFO: Running on /dev/pts/0
+2023/06/22 (11:54:20) | INFO: Quitting! Runtime: 00:00:03
+
+2023/06/27 (12:01:26) | ===> btop++ v.1.2.13
+2023/06/27 (12:01:26) | INFO: Logger set to DEBUG
+2023/06/27 (12:01:26) | DEBUG: Using locale en_US.utf8
+2023/06/27 (12:01:26) | INFO: Running on /dev/pts/0
+2023/06/27 (12:01:26) | INFO: Quitting! Runtime: 00:00:00
+
+2023/06/27 (12:01:30) | ===> btop++ v.1.2.13
+2023/06/27 (12:01:30) | INFO: Logger set to DEBUG
+2023/06/27 (12:01:30) | DEBUG: Using locale en_US.utf8
+2023/06/27 (12:01:30) | INFO: Running on /dev/pts/1
+2023/06/27 (12:01:38) | INFO: Quitting! Runtime: 00:00:08
+
+2023/06/27 (14:16:59) | ===> btop++ v.1.2.13
+2023/06/27 (14:16:59) | INFO: Logger set to DEBUG
+2023/06/27 (14:16:59) | DEBUG: Using locale en_US.utf8
+2023/06/27 (14:16:59) | INFO: Running on /dev/pts/0
+2023/06/27 (14:17:06) | INFO: Quitting! Runtime: 00:00:07
+
+2023/06/27 (14:44:29) | ===> btop++ v.1.2.13
+2023/06/27 (14:44:29) | INFO: Logger set to DEBUG
+2023/06/27 (14:44:29) | DEBUG: Using locale en_US.utf8
+2023/06/27 (14:44:29) | INFO: Running on /dev/pts/0
+2023/06/27 (14:45:09) | DEBUG: Writing new config file
+2023/06/27 (14:45:09) | INFO: Quitting! Runtime: 00:00:40
+
+2023/06/27 (20:45:30) | ===> btop++ v.1.2.13
+2023/06/27 (20:45:30) | INFO: Logger set to DEBUG
+2023/06/27 (20:45:30) | DEBUG: Using locale en_US.utf8
+2023/06/27 (20:45:30) | INFO: Running on /dev/pts/0
+
+2023/06/29 (16:59:16) | ===> btop++ v.1.2.13
+2023/06/29 (16:59:16) | INFO: Logger set to DEBUG
+2023/06/29 (16:59:16) | DEBUG: Using locale en_US.utf8
+2023/06/29 (16:59:16) | INFO: Running on /dev/pts/0
+2023/06/29 (16:59:18) | INFO: Quitting! Runtime: 00:00:02
+
+2023/06/29 (16:59:47) | ===> btop++ v.1.2.13
+2023/06/29 (16:59:47) | INFO: Logger set to DEBUG
+2023/06/29 (16:59:47) | DEBUG: Using locale en_US.utf8
+2023/06/29 (16:59:47) | INFO: Running on /dev/pts/0
+2023/06/29 (16:59:48) | INFO: Quitting! Runtime: 00:00:01
+
+2023/06/30 (20:30:05) | ===> btop++ v.1.2.13
+2023/06/30 (20:30:05) | INFO: Logger set to DEBUG
+2023/06/30 (20:30:05) | DEBUG: Using locale en_US.utf8
+2023/06/30 (20:30:05) | INFO: Running on /dev/pts/1
+2023/06/30 (20:30:11) | INFO: Quitting! Runtime: 00:00:06
+
+2023/07/01 (21:02:31) | ===> btop++ v.1.2.13
+2023/07/01 (21:02:31) | INFO: Logger set to DEBUG
+2023/07/01 (21:02:31) | DEBUG: Using locale en_US.utf8
+2023/07/01 (21:02:31) | INFO: Running on /dev/pts/0
+2023/07/02 (19:37:46) | INFO: Quitting! Runtime: 22:35:15
+
+2023/07/10 (01:18:02) | ===> btop++ v.1.2.13
+2023/07/10 (01:18:02) | INFO: Logger set to DEBUG
+2023/07/10 (01:18:02) | DEBUG: Using locale en_US.utf8
+2023/07/10 (01:18:02) | INFO: Running on /dev/pts/1
+2023/07/10 (01:18:06) | INFO: Quitting! Runtime: 00:00:04
+
+2023/07/11 (22:45:50) | ===> btop++ v.1.2.13
+2023/07/11 (22:45:50) | INFO: Logger set to DEBUG
+2023/07/11 (22:45:50) | DEBUG: Using locale en_US.utf8
+2023/07/11 (22:45:50) | INFO: Running on /dev/pts/1
+2023/07/12 (00:02:47) | INFO: Quitting! Runtime: 01:16:57
+
+2023/07/12 (18:42:08) | ===> btop++ v.1.2.13
+2023/07/12 (18:42:08) | INFO: Logger set to DEBUG
+2023/07/12 (18:42:08) | DEBUG: Using locale en_US.utf8
+2023/07/12 (18:42:08) | INFO: Running on /dev/pts/2
+2023/07/12 (18:42:14) | INFO: Quitting! Runtime: 00:00:06
+
+2023/07/12 (18:43:42) | ===> btop++ v.1.2.13
+2023/07/12 (18:43:42) | INFO: Logger set to DEBUG
+2023/07/12 (18:43:42) | DEBUG: Using locale en_US.utf8
+2023/07/12 (18:43:42) | INFO: Running on /dev/pts/2
+2023/07/12 (18:44:01) | INFO: Quitting! Runtime: 00:00:19
+
+2023/07/12 (18:45:55) | ===> btop++ v.1.2.13
+2023/07/12 (18:45:55) | INFO: Logger set to DEBUG
+2023/07/12 (18:45:55) | DEBUG: Using locale en_US.utf8
+2023/07/12 (18:45:55) | INFO: Running on /dev/pts/2
+2023/07/12 (18:48:31) | INFO: Quitting! Runtime: 00:02:36

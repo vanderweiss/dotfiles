@@ -19,22 +19,22 @@ scrolling:
 
 font:
   normal:
-    family: BPmono
+    family: B612 Mono
     style: Regular
-
+  
   bold:
-    family: BPmono
+    family: B612 Mono
     style: Bold
 
   italic:
-    family: BPmono
+    family: B612 Mono
     style: Regular
 
   bold_italic:
-    family: BPmono
+    family: B612 Mono
     style: Bold
 
-  size: 10
+  size: 9.5
 
   offset: 
     x: 0
