@@ -1,3 +1,8 @@
 */*::steam-overlay
 
 app-text/tldr::guru ~amd64
+=gui-apps/mpvpaper-9999::guru **
+
+www-client/ungoogled-chromium::pf4public
+
+=sys-apps/corectrl-9999::__ROKO **

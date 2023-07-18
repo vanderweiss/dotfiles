@@ -8,4 +8,4 @@ gui-wm/hyprland gnu.stable gnu.lto gnu.fat-lto
 net-misc/spice-gtk gnu.stable
 sys-apps/sandbox llvm.lld
 sys-libs/glibc gnu.stable
-www-client/chromium llvm.lld
+www-client/ungoogled-chromium llvm.lld

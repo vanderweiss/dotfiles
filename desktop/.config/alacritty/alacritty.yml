@@ -3,7 +3,7 @@ window:
     columns: 72
     lines: 24
 
-  opacity: 0.9
+  opacity: 0.92
 
   padding:
     x: 12
@@ -19,22 +19,22 @@ scrolling:
 
 font:
   normal:
-    family: B612 Mono
+    family: PT Mono
     style: Regular
   
   bold:
-    family: B612 Mono
+    family: PT Mono
     style: Bold
 
   italic:
-    family: B612 Mono
+    family: PT Mono
     style: Regular
 
   bold_italic:
-    family: B612 Mono
+    family: PT Mono
     style: Bold
 
-  size: 9.5
+  size: 10.5
 
   offset: 
     x: 0
@@ -46,7 +46,7 @@ draw_bold_text_with_bright_colors: false
 
 colors:
   primary:
-    background: '#100E10'
+    background: '#141414'
     foreground: '#E1D9D2'
   
   normal:
@@ -107,11 +107,11 @@ colors:
     text: CellBackground
     background: CellForeground
 
-  indexed_colors: []
+  indexed_colors: []  
   transparent_background_colors: true
 
 selection:
-  save_to_clipboard: true
+  save_to_clipboard: false
 
 cursor:
   style:
