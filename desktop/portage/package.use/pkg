@@ -31,16 +31,16 @@ www-plugins/chrome-binary-plugins widevine
 sys-libs/glibc hash-sysv-compat
 
 # QEMU emulation
-app-emulation/libvirt pcap qemu virt-network 
-app-emulation/qemu opengl spice static-user usbredir
-app-emulation/virt-manager gui
-dev-libs/glib static-libs
-dev-libs/libpcre2 static-libs
-net-misc/spice-gtk usbredir
-sys-apps/attr static-libs
-sys-libs/glibc static-libs
-sys-libs/llvm-libunwind static-libs
-sys-libs/zlib static-libs
+#app-emulation/libvirt pcap qemu virt-network 
+#app-emulation/qemu opengl spice static-user usbredir
+#app-emulation/virt-manager gui
+#dev-libs/glib static-libs
+#dev-libs/libpcre2 static-libs
+#net-misc/spice-gtk usbredir
+#sys-apps/attr static-libs
+#sys-libs/glibc static-libs
+#sys-libs/llvm-libunwind static-libs
+#sys-libs/zlib static-libs
 
 # Qt
 dev-qt/qtbase egl opengl
