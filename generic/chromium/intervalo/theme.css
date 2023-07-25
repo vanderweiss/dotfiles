@@ -1,0 +1,13 @@
+div[id^="message-content"] :not(code, span[class^="hljs"]) {
+  color: #e3b485 !important;
+}
+
+div[id^="message-content"] span.mention {
+  background: #28241e !important;
+  color: #d68b72 !important;
+}
+
+span[class^="username"] {
+  color: #d68b72 !important;
+}
+
