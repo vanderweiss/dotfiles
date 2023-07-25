@@ -17,17 +17,14 @@ fi
 
 # Put your fun stuff here.
 export PATH="$HOME/.local/bin:$PATH"
-export EDITOR='nvim'
+export EDITOR='hx'
 
 export HISTFILESIZE=
 export HISTSIZE=
 
-alias cat='cat -b'
 alias ls='exa --all --long --numeric --octal-permissions --no-permissions --no-time'
 
-RESET="\[$(tput sgr0)\]"
-
-PS1="\[\e[01;35m[\u@\H] \w\n > $RESET"
+PS1="\[\e[1;34m\]\u@\H \w \n \[\e[1;34m\]> \[\e[0m\]"
 
 . "$HOME/.cargo/env"
 
