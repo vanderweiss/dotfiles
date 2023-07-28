@@ -1,10 +1,8 @@
 :root {
+  --background-modifier-active: var(--intervalo-v) !important;
   --background-modifier-selected: var(--intervalo-v) !important;
-  --background-primary: var(--intervalo-i) !important;
-  --background-secondary-alt: var(--intervalo-i) !important;
-  --background-secondary: var(--intervalo-i) !important;
-  --background-tertiary: var(--intervalo-i) !important;
-  --brand-experiment: var(--intervalo-iv) !important;
+  --background-modifier-hover: var(--intervalo-v) !important;
+  --brand-experiment: var(--intervalo-v) !important;
   --button-danger-background: var(--intervalo-i) !important;
   --button-outline-danger-border: var(--intervalo-iii) !important;
   --button-outline-danger-text: var(--intervalo-iii) !important;
@@ -12,15 +10,19 @@
   --channels-default: var(--intervalo-ii) !important;
   --channeltextarea-background: var(--intervalo-i) !important;
   --green-430: var(--intervalo-iv) !important;
-  --header-primary: var(--intervalo-ii) !important;
+  --header-primary: var(--intervalo-iii) !important;
   --header-secondary: var(--intervalo-ii) !important;
   --interactive-active: var(--intervalo-iii) !important;
   --interactive-hover: var(--intervalo-iii) !important;
   --interactive-normal: var(--intervalo-ii) !important;
   --mention-foreground: var(--intervalo-iii) !important;
+  --primary-500: var(--intervalo-v) !important;
   --primary-600: var(--intervalo-i) !important;
   --primary-630: var(--intervalo-i) !important;
+  --primary-645: var(--intervalo-i) !important;
   --primary-660: var(--intervalo-i) !important;
+  --primary-700: var(--intervalo-i) !important;
+  --primary-800: var(--intervalo-i) !important;
   --status-positive-text: var(--intervalo-i) !important;
   --text-link: var(--intervalo-iii) !important;
   --text-muted: var(--intervalo-iv) !important;
