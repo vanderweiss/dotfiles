@@ -1,6 +1,6 @@
 {
   "name": "intervalo",
-  "version": "4.5",
+  "version": "4.20",
   "description": "",
   "manifest_version": 3,
   "permissions": [
@@ -10,14 +10,19 @@
   "content_scripts": [
     {
       "matches": [
+        "<all_urls>"
+      ],
+      "css": [
+        "root.css"
+      ]
+    },
+    {
+      "matches": [
         "*://discord.com/*"
       ],
       "css": [
-        "theme.css"
+        "discord.css"
       ]
     }
-  ],
-  "host_permissions": [
-    "<all_urls>"
   ]
 }
