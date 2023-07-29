@@ -31,6 +31,10 @@
   --white-500: var(--intervalo-ii) !important;
 }
 
+div > span.item-2LIpTv {
+  background-color: var(--intervalo-iii) !important;
+}
+
 span[class^="username"] {
   filter: saturate(50%);
 }
