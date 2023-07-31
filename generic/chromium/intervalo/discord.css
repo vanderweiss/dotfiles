@@ -1,23 +1,27 @@
-:root {
-  --background-modifier-active: var(--intervalo-v) !important;
-  --background-modifier-selected: var(--intervalo-v) !important;
-  --background-modifier-hover: var(--intervalo-v) !important;
+:root {  
+  --background-modifier-active: var(--intervalo-ii) !important;
+  --background-modifier-selected: var(--intervalo-ii) !important;
+  --background-modifier-hover: var(--intervalo-ii) !important;
   --button-danger-background: var(--intervalo-i) !important;
-  --button-outline-danger-border: var(--intervalo-iii) !important;
-  --button-outline-danger-text: var(--intervalo-iii) !important;
-  --channels-default: var(--intervalo-ii) !important;
-  --interactive-active: var(--intervalo-iii) !important;
-  --interactive-hover: var(--intervalo-iii) !important;
+  --button-outline-danger-border: var(--intervalo-iv) !important;
+  --button-outline-danger-text: var(--intervalo-iv) !important;
+  --channels-default: var(--intervalo-iii) !important;
+  --interactive-active: var(--intervalo-iv) !important;
+  --interactive-hover: var(--intervalo-iv) !important;
 
-  --blue-345: var(--intervalo-iii) !important;
-  --brand-260: var(--intervalo-iii) !important;
-  --green-430: var(--intervalo-iii) !important;
-  --primary-130: var(--intervalo-iii) !important;
-  --primary-230: var(--intervalo-ii) !important;
-  --primary-330: var(--intervalo-ii) !important;
-  --primary-360: var(--intervalo-iv) !important;
-  --primary-400: var(--intervalo-iii) !important;
-  --primary-500: var(--intervalo-v) !important;
+  --blue-345: var(--intervalo-iv) !important;
+  --brand-260: var(--intervalo-iv) !important;
+  --brand-500: var(--intervalo-ii) !important;
+  --green-330: var(--intervalo-ii) !important;
+  --green-430: var(--intervalo-iv) !important;
+  --primary-130: var(--intervalo-iv) !important;
+  --primary-230: var(--intervalo-iii) !important;
+  --primary-330: var(--intervalo-iii) !important;
+  --primary-360: var(--intervalo-v) !important;
+  --primary-400: var(--intervalo-iv) !important;
+  --primary-430: var(--intervalo-iv) !important;
+  --primary-500: var(--intervalo-ii) !important;
+  --primary-530: var(--intervalo-ii) !important;
   --primary-560: var(--intervalo-i) !important;
   --primary-600: var(--intervalo-i) !important;
   --primary-630: var(--intervalo-i) !important;
@@ -25,9 +29,13 @@
   --primary-660: var(--intervalo-i) !important;
   --primary-700: var(--intervalo-i) !important;
   --primary-800: var(--intervalo-i) !important;
-  --white-500: var(--intervalo-ii) !important;
+  --white-500: var(--intervalo-iv) !important;
+}
+
+code {
+  color: var(--intervalo-vi) !important;
 }
 
 div > span.item-2LIpTv {
-  background-color: var(--intervalo-iii) !important;
+  background-color: var(--intervalo-iv) !important;
 }
