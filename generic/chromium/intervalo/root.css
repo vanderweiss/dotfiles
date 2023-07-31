@@ -1,7 +1,10 @@
 :root {
+  --intervalo-font: 'PT Mono';
+
   --intervalo-i: #28241e;
   --intervalo-ii: #d68b72;
   --intervalo-iii: #c49b7d;
   --intervalo-iv: #e3b485;
   --intervalo-v: #423a2d;
+  --intervalo-vi: #e1d5c6;
 }
