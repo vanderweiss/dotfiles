@@ -1,4 +1,4 @@
-theme = "intervalo"
+theme = "base16_transparent"
 
 [editor]
 auto-info	= false
