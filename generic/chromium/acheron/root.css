@@ -1,0 +1,29 @@
+:root {
+  --acheron-bg: #0f0f0; 
+  --acheron-fg: #e2e3ea;
+
+  /*
+  
+  ANSI 16 Reference
+  i: Black
+  ii: Red
+  iii: Green
+  iv: Yellow
+  v: Blue
+  vi: Magenta
+  vii: Cyan
+  viii: White
+  ix: bBlack
+  
+  */
+  
+  --acheron-i: #2d1c1e;
+  --acheron-ii: #788bc5;
+  --acheron-iii: #d7a7a4;
+  --acheron-iv: #8ea4ce;
+  --acheron-v: #a6b5d9;
+  --acheron-vi: #b2c0de;
+  --acheron-vii: #c4c4e5;
+  --acheron-viii: #e2e3ea;
+  --acheron-ix: #9e9ea3;
+}

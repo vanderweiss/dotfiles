@@ -1,0 +1,9 @@
+:root {
+  --blue-345: var(--acheron-iii) !important;
+  --brand-500: var(--acheron-ii) !important;
+  --primary-130: var(--acheron-vii) !important;
+  --primary-230: var(--acheron-vi) !important;
+  --primary-330: var(--acheron-v) !important;
+  --primary-360: var(--acheron-iv) !important;
+  --white-500: var(--acheron-vii) !important;
+}
