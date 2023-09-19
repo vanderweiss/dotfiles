@@ -1,0 +1,7 @@
+dev-qt/qtbase egl eglfs gles2-only opengl
+dev-qt/qtcharts qml
+dev-qt/qtdeclarative opengl
+dev-qt/qtgui egl
+dev-qt/linguist-tools qml
+dev-qt/qtwebchannel qml
+dev-qt/qtwebengine designer widgets

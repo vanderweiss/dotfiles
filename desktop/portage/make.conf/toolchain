@@ -1,0 +1,17 @@
+CC="clang"
+CXX="clang++"
+AR="llvm-ar"
+NM="llvm-nm"
+RANLIB="llvm-ranlib"
+
+COMMON_FLAGS="-march=native -O3 -pipe -flto=thin"
+CFLAGS="${COMMON_FLAGS}"
+CXXFLAGS="${COMMON_FLAGS}"
+FCFLAGS="${COMMON_FLAGS}"
+FFLAGS="${COMMON_FLAGS}"
+
+LDFLAGS="-fuse-ld=mold -rtlib=compiler-rt -unwindlib=libunwind  -flto=thin -Wl,--as-needed"
+
+CPU_FLAGS_X86="aes avx avx2 f16c fma3 mmx mmxext pclmul popcnt rdrand sha sse sse2 sse3 sse4_1 sse4_2 sse4a ssse3"
+
+MAKEOPTS="-j8"

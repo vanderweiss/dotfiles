@@ -1,0 +1,18 @@
+ACCEPT_KEYWORDS="~amd64"
+
+USE="alsa clang dbus libcxx lto pgo pulseaudio vaapi vulkan wayland X -bluetooth -cups -elogind -emacs -gnome -savedconfig -systemd"
+
+EMERGE_DEFAULT_OPTS="--quiet-build --verbose"
+ACCEPT_LICENSE="*"
+FEATURES="nodoc noinfo noman notitles -news -sandbox -pid-sandbox -usersandbox"
+VIDEO_CARDS="amdgpu radeon radeonsi"
+
+PORTDIR="/var/db/repos/gentoo"
+DISTDIR="/var/cache/distfiles"
+PKGDIR="/var/cache/binpkgs"
+
+PORTAGE_TMPDIR="/tmp"
+
+LC_MESSAGES=C
+
+GENTOO_MIRRORS="ftp://mirrors.tera-byte.com/pub/gentoo http://gentoo.mirrors.tera-byte.com/ rsync://mirrors.tera-byte.com/gentoo"

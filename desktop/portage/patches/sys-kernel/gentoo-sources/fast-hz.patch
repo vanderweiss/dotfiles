@@ -1,0 +1,21 @@
+--- linux-6.1.7-xanmod-DEFAULT/kernel/Kconfig.hz	2023-01-25 06:09:16.352133089 -0600
++++ linux-6.1.7-xanmod/kernel/Kconfig.hz	2023-01-25 06:47:58.553964796 -0600
+@@ -53,6 +53,10 @@
+ 	 1000 Hz is the preferred choice for desktop systems and other
+ 	 systems requiring fast interactive responses to events.
+ 
++	config HZ_2500
++		bool "2500 HZ"
++	help
++	 2500 Hz is the preferred choice for a gamer/streamer setup.
+ endchoice
+ 
+ config HZ
+@@ -62,6 +66,7 @@
+ 	default 300 if HZ_300
+ 	default 500 if HZ_500
+ 	default 1000 if HZ_1000
++	default 2500 if HZ_2500
+ 
+ config SCHED_HRTICK
+ 	def_bool HIGH_RES_TIMERS

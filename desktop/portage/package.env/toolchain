@@ -1,6 +1,8 @@
+app-arch/p7zip gnu.stable gnu.lto gnu.fat-lto
 app-editors/neovim gnu.stable gnu.lto gnu.fat-lto *.ofast
 app-emulation/libvirt llvm.lld
 app-emulation/qemu gnu.stable gnu.lto gnu.fat-lto
+app-emulation/wine-staging gnu.stable
 dev-lang/python gnu.stable
 dev-libs/glib gnu.stable
 dev-util/glslang llvm.lld

@@ -1,0 +1,2 @@
+www-client/ungoogled-chromium -pgo -system-ffmpeg optimize-thinlto optimize-webui thinlto widevine
+www-plugins/chrome-binary-plugins widevine
