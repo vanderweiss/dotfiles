@@ -8,6 +8,8 @@ export EDITOR='hx'
 export HISTFILESIZE=
 export HISTSIZE=
 
+complete -cf doas
+
 alias ls='exa --all --long --numeric --octal-permissions --no-permissions --no-time'
 
 PS1="\[\e[1;34m\]\u@\H \w \n \[\e[1;34m\]> \[\e[0m\]"
