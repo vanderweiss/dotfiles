@@ -1,0 +1,27 @@
+font = "Cartograph CF"
+font-size = 16
+font-features = "liga 0"
+hint-font = false
+
+background-color = #000a
+default-result-color = #FFFFF0
+selection-color = #788bc5
+
+prompt-text = ""
+result-spacing = 25
+num-results = 5
+
+width = 100%
+height = 100%
+
+border-width = 0
+outline-width = 0
+
+padding-left = 35%
+padding-top = 35%
+
+anchor = center
+
+hide-input = true
+history = false
+ascii-input = true
