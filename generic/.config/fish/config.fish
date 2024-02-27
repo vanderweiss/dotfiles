@@ -15,11 +15,7 @@ function fish_prompt
     echo -n (set_color blue)(prompt_pwd) (set_color white)'❯'(set_color yellow)'❯'(set_color green)'❯ '  
 end
 
-function fish_right_prompt
-    set -l _status $status
-    if test $_status -ne 0
-        echo (set_color -o red)"E$_status"(set_color normal)
-    end
+function fish_right_prompt 
 end
 
 if status is-interactive

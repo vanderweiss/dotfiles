@@ -1,0 +1,31 @@
+#!/bin/bash
+
+if [[ -z $1 ]]; then exit 1; fi
+
+KERNEL_DIR="linux-$1"
+
+if ! [[ -d $KERNEL_DIR ]]; then 
+  tar -xf "$KERNEL_DIR.tar.xz"
+fi 
+
+cd $KERNEL_DIR
+
+if ! [[ -e '.config' ]]; then 
+  cp $2 . && make oldconfig
+fi
+
+MODULES_DIR="/usr/lib/modules/$1"
+
+LLVM=1 make -j10
+
+if ! [[ -d $MODULES_DIR ]]; then
+  sudo mkdir -p $MODULES_DIR
+fi  
+
+sudo make modules_install
+
+sudo cp '.config' "/boot/config-$1"
+sudo cp 'System.map' "/boot/System.map-$1"
+sudo cp 'arch/x86/boot/bzImage' "/boot/vmlinuz-$1" 
+
+sudo grub-mkconfig -o '/boot/grub/grub.cfg'
