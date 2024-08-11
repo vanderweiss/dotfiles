@@ -1,21 +1,25 @@
-set -gx GOPATH '/vacht/.go'
+alias l='eza -loa --no-permissions --smart-group --time-style=relative --git'
+alias c='clear'
+alias ff='fastfetch'
 
-alias ls='exa -aln --octal-permissions --no-permissions --no-time'
-
-function fish_title
-    set -q argv[1]; or set argv fish
-    echo "$USER at $hostname": (fish_prompt_pwd_full_dirs=5 prompt_pwd);
+function hx
+    command hx $argv
+    printf '\033[0 q'
 end
 
 function fish_greeting
-    echo (set_color -o blue)$USER (set_color white)'at' (set_color -o blue)$hostname
+end
+
+function fish_write
+    set_color $argv[1]
+    echo -en $argv[2]
+    set_color normal
 end
 
 function fish_prompt
-    echo -n (set_color blue)(prompt_pwd) (set_color white)'❯'(set_color yellow)'❯'(set_color green)'❯ '  
-end
-
-function fish_right_prompt 
+    fish_write normal "\n "
+    fish_write magenta (prompt_pwd --full-length-dirs=99999)
+    fish_write normal "\n := "
 end
 
 if status is-interactive
@@ -24,5 +28,3 @@ end
 if status is-login
     bass source /etc/profile
 end
-
-
