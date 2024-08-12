@@ -1,0 +1,22 @@
+#!/bin/sh
+
+export XDG_CURRENT_DESKTOP=river
+export XDG_SESSION_TYPE=wayland
+export XDG_SESSION_DESKTOP=river
+
+export GDK_BACKEND="wayland,x11"
+export GTK_SCALE=1
+export GTK_THEME=Adwaita:dark
+
+export QT_QPA_PLATFORM="wayland;xcb"
+export QT_AUTO_SCREEN_SCALE_FACTOR=1
+export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
+export QT_WPA_PLATFOMRTHEME=qt5ct
+
+export SDL_VIDEODRIVER="wayland,x11"
+export CLUTTER_BACKEND=wayland
+
+systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+wlr-randr --output=DP-1 --custom-mode 1920x1080@144
+swww init && swww img ~/media/wallpapers/active
