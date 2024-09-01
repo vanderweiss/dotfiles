@@ -1,0 +1,4 @@
+nick = "foot"
+symlink = false
+out = "~/.config/foot/themes/meiya.ini"
+
