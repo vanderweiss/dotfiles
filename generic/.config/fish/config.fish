@@ -2,9 +2,6 @@ alias l='eza -loa --no-permissions --smart-group --time-style=relative --git'
 alias c='clear'
 alias ff='fastfetch'
 
-function fish_greeting
-end
-
 function fish_write
     set_color $argv[1]
     echo -en $argv[2]
@@ -17,6 +14,6 @@ function fish_prompt
     fish_write normal "\n := "
 end
 
-if status is-login
+if status is-interactive
     bass source /etc/profile
 end

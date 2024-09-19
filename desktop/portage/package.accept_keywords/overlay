@@ -1,0 +1,19 @@
+kde-misc/corectrl::farmboy0
+
+app-office/obsidian::guru
+ games-util/mangohud::guru
+games-util/r2modman-bin::guru
+gui-apps/fuzzel::guru
+gui-apps/lswt::guru
+gui-apps/swww::guru
+gui-apps/wlr-randr::guru
+media-fonts/lato::guru
+media-libs/imgui::guru
+media-libs/implot::guru
+
+dev-tex/tectonic::src_prepare-overlay
+dev-tex/texlab::src_prepare-overlay
+
+gui-wm/river::wayland-desktop
+
+*/*::steam-overlay

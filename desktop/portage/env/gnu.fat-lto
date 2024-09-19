@@ -1,1 +1,0 @@
-LDFLAGS="-ffat-lto-objects"

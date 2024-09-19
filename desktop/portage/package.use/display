@@ -1,3 +1,0 @@
-gui-libs/wlroots x11-backend
-media-libs/mesa vulkan-overlay
-x11-base/xorg-server xvfb

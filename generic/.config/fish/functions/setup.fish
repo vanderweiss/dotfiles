@@ -1,5 +1,8 @@
 function setup
     switch $argv[1]
+        case base
+            set -U fish_greeting
+            echo 'Base environment setup done!'
         case desktop
             set -Ux CLUTTER_BACKEND wayland
             set -Ux GDK_BACKEND wayland
@@ -14,7 +17,7 @@ function setup
             set -Ux XDG_SESSION_DESKTOP river
             set -Ux XDG_SESSION_TYPE wayland
             set -Ux TERM footclient
-            echo "Desktop environment setup done!"
+            echo 'Desktop environment setup done!'
         case '*'
             echo hi
     end

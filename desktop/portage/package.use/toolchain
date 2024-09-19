@@ -1,4 +1,0 @@
-dev-lang/rust rust-src
-net-libs/nodejs inspector
-sys-devel/binutils -pgo
-sys-devel/llvm binutils-plugin

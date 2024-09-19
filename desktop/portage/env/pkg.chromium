@@ -1,2 +1,2 @@
-EXTRA_GN="thin_lto_enable_optimizations=true use_thin_lto=true is_cfi=true use_lld=true is_clang=true clang_use_chrome_plugins=false"
+EXTRA_GN="use_lld=true is_clang=true clang_use_chrome_plugins=false" 
 CHROMIUM_FORCE_LIBCXX=yes

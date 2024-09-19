@@ -1,8 +1,0 @@
-export XCURSOR_SIZE=24
-
-export WLR_RENDERER=vulkan
-export WLR_NO_HARDWARE_CURSORS=1
-
-export GDK_SCALE=1
-
-exec Hyprland
