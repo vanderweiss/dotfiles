@@ -1,3 +1,42 @@
+environment {
+    DISPLAY ":0"
+}
+
+spawn-at-startup "systemctl" "--user" "import-environment" "DISPLAY" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP"
+spawn-at-startup "dbus-update-activation-environment" "--systemd" "DISPLAY" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP"
+spawn-at-startup "xwayland-satellite :0"
+spawn-at-startup "swww" "init"
+spawn-at-startup "swww" "img" "~/archive/exp/splash/active"
+spawn-at-startup "foot" "-s"
+
+window-rule {
+    match app-id=r#"^org\.wezfurlong\.wezterm$"#
+    default-column-width {}
+}
+
+window-rule {
+    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    open-floating true
+}
+
+/-window-rule {
+    match app-id=r#"^org\.keepassxc\.KeePassXC$"#
+    match app-id=r#"^org\.gnome\.World\.Secrets$"#
+
+    block-out-from "screen-capture"
+}
+
+prefer-no-csd
+screenshot-path null
+
+cursor {
+    xcursor-theme "Adwaita"
+}
+
+hotkey-overlay {
+    skip-at-startup
+}
+
 input {
     keyboard {
         xkb {
@@ -9,11 +48,8 @@ input {
     }
 
     mouse {
-        // off
-        // natural-scroll
-        // accel-speed 0.2
-        // accel-profile "flat"
-        // scroll-method "no-scroll"
+        accel-speed 0.75
+        accel-profile "flat"
     }
 }
 
@@ -57,34 +93,6 @@ layout {
         // top 64
         // bottom 64
     }
-}
-
-screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
-
-window-rule {
-    match app-id=r#"^org\.wezfurlong\.wezterm$"#
-    default-column-width {}
-}
-
-// Open the Firefox picture-in-picture player as floating by default.
-window-rule {
-    // This app-id regular expression will work for both:
-    // - host Firefox (app-id is "firefox")
-    // - Flatpak Firefox (app-id is "org.mozilla.firefox")
-    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
-    open-floating true
-}
-
-// Example: block out two password managers from screen capture.
-// (This example rule is commented out with a "/-" in front.)
-/-window-rule {
-    match app-id=r#"^org\.keepassxc\.KeePassXC$"#
-    match app-id=r#"^org\.gnome\.World\.Secrets$"#
-
-    block-out-from "screen-capture"
-
-    // Use this instead if you want them visible on third-party screenshot tools.
-    // block-out-from "screencast"
 }
 
 binds {
@@ -230,10 +238,3 @@ binds {
 
     Mod+Shift+P { power-off-monitors; }
 }
-
-spawn-at-startup "systemctl" "--user" "import-environment" "DISPLAY" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP"
-spawn-at-startup "dbus-update-activation-environment" "--systemd" "DISPLAY" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP"
-spawn-at-startup "xwayland-satellite :0"
-spawn-at-startup "swww" "init"
-spawn-at-startup "swww" "img" "~/archive/exp/splash/active"
-spawn-at-startup "foot" "-s"

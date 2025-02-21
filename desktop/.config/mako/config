@@ -1,0 +1,45 @@
+max-history=1
+sort=+time
+
+on-button-left=invoke-default-action
+on-button-middle=dismiss-group
+on-button-right=dismiss
+on-touch=invoke-default-action
+on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/message.oga
+
+font=Terminess Nerd Font 12
+
+background-color=#000000
+text-color=#FFFFFF
+
+width=400
+height=100
+
+outer-margin=1
+margin=10
+padding=10
+
+border-size=1
+border-color=#FFFFFF
+border-radius=0
+
+progress-color=over #0b1c1c
+
+icons=1
+max-icon-size=34
+icon-location=left
+
+history=1
+
+format= <b>%s</b>\n%b
+
+text-alignment=center
+
+default-timeout=10000
+ignore-timeout=0
+
+max-visible=3
+
+layer=top
+
+anchor=top-right
