@@ -1,2 +1,0 @@
-EXTRA_GN="use_lld=true is_clang=true clang_use_chrome_plugins=false" 
-CHROMIUM_FORCE_LIBCXX=yes

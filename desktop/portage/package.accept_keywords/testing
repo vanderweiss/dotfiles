@@ -1,5 +1,6 @@
 app-emulation/qemu
 app-eselect/eselect-zig
+app-i18n/mozc
 app-misc/anki
 dev-build/rocm-cmake
 dev-cpp/sdbus-c++
@@ -21,4 +22,5 @@ gui-libs/wlroots
 gui-wm/gamescope
 media-libs/vkroots
 media-video/obs-studio
+sys-firmware/seabios-bin
 sys-libs/libudev-compat

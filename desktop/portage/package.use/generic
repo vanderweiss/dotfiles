@@ -1,24 +1,28 @@
 app-crypt/gcr:0 gtk
+app-i18n/mozc renderer
 app-text/poppler cairo
 app-text/texlive cjk extra png truetype
 app-text/texlive-core cjk
 app-text/xmlto text
 app-text/zathura synctex
+dev-java/openjdk headless-awt -alsa
 dev-libs/libxml2 icu
 dev-libs/libdbusmenu gtk gtk3
-dev-python/PyQt5 webchannel gui network widgets printsupport
+dev-libs/quazip qt6
+dev-python/pyqt6 opengl quick qml webchannel
 dev-qt/linguist-tools qml
 dev-qt/qtbase opengl
 dev-qt/qtcharts:5 qml # corectrl stuff
+dev-qt/qtdeclarative opengl
 dev-qt/qtgui egl
-dev-qt/qtgui jpeg
 dev-qt/qttools opengl
-dev-qt/qtwebchannel:5 qml
-dev-qt/qtwebengine:5 widgets
+dev-qt/qtwebengine opengl
+games-util/mangohud::guru mangoapp
 gui-apps/fuzzel::guru cairo png svg
 media-fonts/noto cjk
+media-fonts/terminess-nerd::supertux88 mono
 media-libs/harfbuzz icu
-media-libs/imgui::guru opengl
+media-libs/imgui::guru glfw opengl
 media-libs/libsdl2 gles2
 media-libs/mesa -opencl
 media-video/ffmpeg opus x264 x265
@@ -30,6 +34,7 @@ sys-apps/systemd policykit
 sys-devel/gcc grapheme
 sys-kernel/installkernel dracut grub
 sys-libs/zlib minizip
+x11-base/xwayland libei
 x11-libs/gtk+ cups
 
 app-emulation/qemu spice QEMU_SOFTMMU_TARGETS: aarch64 arm QEMU_USER_TARGETS: aarch64 arm
