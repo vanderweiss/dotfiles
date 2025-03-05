@@ -7,6 +7,7 @@ dev-cpp/sdbus-c++
 dev-java/openjdk-bin:21
 dev-lang/zig
 dev-libs/libfmt
+dev-libs/nss
 dev-libs/rocm-comgr
 dev-libs/rocm-device-libs
 dev-libs/rocm-opencl-runtime
@@ -24,3 +25,4 @@ media-libs/vkroots
 media-video/obs-studio
 sys-firmware/seabios-bin
 sys-libs/libudev-compat
+www-client/firefox

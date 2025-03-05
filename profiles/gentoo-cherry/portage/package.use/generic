@@ -25,6 +25,7 @@ media-libs/harfbuzz icu
 media-libs/imgui::guru glfw opengl
 media-libs/libsdl2 gles2
 media-libs/mesa -opencl
+media-libs/libvpx postproc
 media-video/ffmpeg opus x264 x265
 media-video/obs-studio pipewire
 media-video/pipewire pipewire-alsa sound-server
@@ -34,6 +35,8 @@ sys-apps/systemd policykit
 sys-devel/gcc grapheme
 sys-kernel/installkernel dracut grub
 sys-libs/zlib minizip
+www-client/firefox hwaccel
+x11-base/xorg-server xvfb
 x11-base/xwayland libei
 x11-libs/gtk+ cups
 
