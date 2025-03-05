@@ -1,3 +1,7 @@
-Repository of assets and configuration files for my systems.
+# Repository of assets and configuration files for my systems.
 
-heh!
+Current profiles: 
+- gentoo-cherry (main desktop)
+- chimera-apricot
+- chimera-kiwi
+- chimera-melon
