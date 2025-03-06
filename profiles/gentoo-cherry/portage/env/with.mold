@@ -1,0 +1,3 @@
+LD="ld.mold"
+RUSTFLAGS="${RUSTFLAGS} -Clink-arg=-fuse-ld=mold"
+LDFLAGS="${LDFLAGS} -fuse-ld=mold"

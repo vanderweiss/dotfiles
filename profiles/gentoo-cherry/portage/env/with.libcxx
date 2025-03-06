@@ -1,0 +1,4 @@
+LLVM_USE_LIBCXX="1"
+CXXSTDLIB="c++"
+
+CXXFLAGS="${CXXFLAGS} -stdlib=libc++"
