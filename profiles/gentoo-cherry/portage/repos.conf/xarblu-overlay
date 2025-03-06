@@ -1,0 +1,4 @@
+[xarblu-overlay]
+location = /var/db/repos/xarblu-overlay
+sync-type = git
+sync-uri = https://github.com/xarblu/xarblu-overlay.git
