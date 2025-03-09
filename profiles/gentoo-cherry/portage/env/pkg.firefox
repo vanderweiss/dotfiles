@@ -10,5 +10,3 @@ FFLAGS="${COMMON_FLAGS}"
 RUSTFLAGS="${RUSTFLAGS} -Ctarget-cpu=native -Copt-level=3 -Cstrip=debuginfo -Csymbol-mangling-version=v0 -Cpanic=abort -Ctarget-feature=+crt-static"
 
 LDFLAGS="-Wl,-O2,--as-needed,--hash-style=gnu -flto=thin"
-
-FEATURES="${FEATURES} usersandbox"

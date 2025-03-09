@@ -1,0 +1,5 @@
+CFLAGS="${CFLAGS} -fno-lto"
+CXXFLAGS="${CXXFLAGS} -fno-lto"
+FCFLAGS="${FCFLAGS} -fno-lto"
+FFLAGS="${FFLAGS} -fno-lto"
+LD_FLAGS="${LD_FLAGS} -fno-lto"
