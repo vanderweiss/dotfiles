@@ -1,5 +1,6 @@
+# Polly behaves funny with firefox
 POLLY_FLAGS="-fplugin=LLVMPolly.so -mllvm=-polly -mllvm=-polly-vectorizer=stripmine -mllvm=-polly-omp-backend=LLVM -mllvm=-polly-parallel -mllvm=-polly-num-threads=8 -mllvm=-polly-scheduling=dynamic"
-COMMON_FLAGS="-march=native -O3 -pipe -flto=thin -fno-semantic-interposition ${POLLY_FLAGS}"
+COMMON_FLAGS="-march=native -O3 -pipe -flto=thin -fno-semantic-interposition -ffunction-sections -fdata-sections"
 
 CFLAGS="${COMMON_FLAGS}"
 CXXFLAGS="${COMMON_FLAGS}"
@@ -9,4 +10,4 @@ FFLAGS="${COMMON_FLAGS}"
 # Enabling LTO results in build failure somehow
 RUSTFLAGS="${RUSTFLAGS} -Ctarget-cpu=native -Copt-level=3 -Cstrip=debuginfo -Csymbol-mangling-version=v0 -Cpanic=abort -Ctarget-feature=+crt-static"
 
-LDFLAGS="-Wl,-O2,--as-needed,--hash-style=gnu -flto=thin"
+LDFLAGS="-Wl,-O2,--as-needed,--hash-style=gnu,--gc-sections,--sort-common -flto=thin"

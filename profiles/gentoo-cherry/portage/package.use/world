@@ -1,43 +1,50 @@
+app-alternatives/bzip2 pbzip2 -reference
+app-alternatives/gzip pigz -reference
+app-alternatives/lzip plzip -reference
 app-crypt/gcr:0 gtk
-app-emulation/qemu spice QEMU_SOFTMMU_TARGETS: aarch64 arm QEMU_USER_TARGETS: aarch64 arm
-app-i18n/mozc renderer
+app-emulation/qemu gtk ncurses sdl spice QEMU_SOFTMMU_TARGETS: aarch64 arm QEMU_USER_TARGETS: aarch64 arm
+app-i18n/mozc fcitx5 renderer
 app-text/poppler cairo
-app-text/texlive cjk extra png truetype
+app-text/texlive cjk extra truetype
 app-text/texlive-core cjk
 app-text/xmlto text
 app-text/zathura synctex
 dev-java/openjdk headless-awt -alsa
-dev-libs/libxml2 icu
+dev-lang/php gd pcntl sockets truetype curl zip
+dev-lang/python jit tail-call-interp
 dev-libs/libdbusmenu gtk gtk3
 dev-libs/quazip qt6
-dev-python/pyqt6 opengl quick qml webchannel
+dev-python/pyqt6 quick qml webchannel
 dev-qt/linguist-tools qml
-dev-qt/qtbase opengl
-dev-qt/qtcharts:5 qml # corectrl stuff
-dev-qt/qtdeclarative opengl
+dev-qt/qtcharts qml
 dev-qt/qtgui egl
-dev-qt/qttools opengl
-dev-qt/qtwebengine opengl
+dev-qt/qttools qml
+dev-qt/qtwebengine screencast
 games-util/mangohud::guru mangoapp
-gui-apps/fuzzel::guru cairo png svg
+gui-apps/fuzzel::guru cairo
+gui-wm/niri screencast
+llvm-core/clang-runtime polly
 media-fonts/noto cjk
 media-fonts/terminess-nerd::supertux88 mono
-media-libs/harfbuzz icu
-media-libs/imgui::guru glfw opengl
+media-gfx/imagemagick xml
+media-libs/gd truetype
+media-libs/imgui::guru glfw
 media-libs/libpng apng
 media-libs/libsdl2 gles2
 media-libs/libvpx postproc
 media-libs/mesa -opencl
 media-video/ffmpeg opus x264 x265
-media-video/obs-studio pipewire
-media-video/pipewire pipewire-alsa sound-server
+media-video/pipewire flatpak pipewire-alsa sound-server
 net-dns/dnsmasq script
 net-libs/gnutls tools pkcs11
+sci-libs/kissfft -cpu_flags_x86_sse
 sys-apps/systemd policykit
-sys-devel/gcc grapheme
+sys-apps/xdg-desktop-portal flatpak
+sys-devel/gcc jit
+sys-kernel/gentoo-kernel experimental
 sys-kernel/installkernel dracut grub
+sys-kernel/linux-firmware compress-zstd deduplicate
 sys-libs/zlib minizip
-www-client/firefox hwaccel openh264 system-png -telemetry L10N: de fr ja
+www-client/firefox hwaccel openh264 system-pipewire system-png -telemetry L10N: de fr ja
 x11-base/xorg-server xvfb
 x11-base/xwayland libei
-x11-libs/gtk+ cups

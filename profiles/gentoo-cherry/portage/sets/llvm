@@ -5,4 +5,4 @@ llvm-core/llvm
 llvm-core/lld
 llvm-core/clang
 llvm-runtimes/libunwind
-llvm-core/polly::xarblu-overlay
+llvm-core/polly
