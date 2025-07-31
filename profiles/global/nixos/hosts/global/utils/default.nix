@@ -5,7 +5,7 @@
     fish
     neovim
     tree
-    lsd
+    eza
     bat
     btop   
   ];
