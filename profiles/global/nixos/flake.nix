@@ -1,0 +1,25 @@
+{
+  
+  description = "Europa's flake";
+
+  inputs = {
+    nixpkgs.url =         "github:nixos/nixpkgs?ref=nixos-unstable";
+    chaotic.url =         "github:chaotic-cx/nyx/nyxpkgs-unstable";
+    
+    arion.inputs.nixpkgs.follows = "nixpkgs";
+  };
+
+  outputs = { self, nixpkgs, arion, chaotic, ... }: {
+    nixosConfigurations.valine = nixpkgs.lib.nixosSystem {
+      system = "aarch64-linux";
+      modules = [
+        arion.nixosModules.arion
+        chaotic.nixosModules.nyx-cache
+        chaotic.nixosModules.nyx-overlay
+        chaotic.nixosModules.nyx-registry
+        ./hosts/valine
+      ];
+    };
+  };
+  
+}
