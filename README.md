@@ -1,7 +1,6 @@
 # Repository of assets and configuration files for my systems.
 
 Current profiles: 
-- gentoo-cherry (main desktop)
-- chimera-apricot
-- chimera-kiwi
-- chimera-melon
+- profiles/gentoo-cherry (desktop)
+- profiles/gentoo-mango (laptop)
+- profiles/global/nixos (rpi4)
