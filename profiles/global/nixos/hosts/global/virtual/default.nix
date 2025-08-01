@@ -1,15 +1,21 @@
 { pkgs, ... }: {
 
   environment.systemPackages = with pkgs; [
-    docker-compose
+    podman-compose
     lazydocker
-    arion
+    compose2nix
   ];
+  
+  networking.firewall.interfaces."podman+".allowedUDPPorts = [ 53 ];
 
-  virtualisation.docker.enable = true;
-  virtualisation.docker.autoPrune.enable = true;
-  virtualisation.docker.storageDriver = "overlay2";
-
-  users.users.you.extraGroups = [ "docker" ];
+  virtualisation.oci-containers.backend = "podman";
+  virtualisation.podman = {
+    enable = true;
+    autoPrune.enable = true;
+    dockerCompat = true;
+    defaultNetwork.settings = {
+      dns_enabled = true;
+    };
+  };  
 
 }

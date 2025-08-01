@@ -35,9 +35,7 @@
     git
     fastfetch
    ];
-  
-  virtualisation.docker.enable = true;
-  
+    
   services = {
     ananicy = {
       enable = true;

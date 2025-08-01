@@ -10,11 +10,11 @@
     ../../hosts/global/utils
     ../../hosts/global/virtual
 
-    # Host-specific (hardware, boot, networking, arion)
+    # Host-specific (hardware, boot, networking, native containers)
     ./hardware.nix
     ./boot.nix
     ./networking.nix
-    ./arion.nix
+    ./oci-containers.nix
   ]; 
 
   # Code name assigned to host name
