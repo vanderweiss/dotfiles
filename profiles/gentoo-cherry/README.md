@@ -1,5 +1,10 @@
 # gentoo-cherry profile
 
-specs:
-- AMD Ryzen 5 3600
+Specs:
+- AMD Ryzen 7 5700X
 - AMD Radeon 6800 XT
+
+Desktop:
+- fish
+- foot
+- niri
