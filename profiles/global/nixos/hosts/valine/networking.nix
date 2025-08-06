@@ -1,5 +1,6 @@
-{ ... }:{
+{ ... }:
 
+{
   networking = {
     useDHCP = false;
     defaultGateway = "192.168.0.1";
@@ -19,6 +20,5 @@
     };
 
     firewall.allowedTCPPorts = [ 22 88 443 8080 ];
-  };
-    
+  };   
 }

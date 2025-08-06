@@ -1,5 +1,6 @@
-{ lib, pkgs, ... }: {
+{ lib, pkgs, ... }:
 
+{
   boot = {
     loader.systemd-boot = {
       enable = true;
@@ -29,6 +30,5 @@
       "console=tty1"
       "mitigations=off"
     ];
-  };
-  
+  };  
 }

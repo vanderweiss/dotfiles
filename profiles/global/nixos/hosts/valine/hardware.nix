@@ -1,5 +1,6 @@
-{ lib, pkgs, ... }: {
-  
+{ lib, pkgs, ... }:
+
+{ 
   hardware.enableRedistributableFirmware = true;
   hardware.graphics.enable = true;
 
@@ -109,6 +110,5 @@
     {
       device = "/dev/disk/by-label/swap";
     }
-  ];
-    
+  ];   
 }

@@ -1,5 +1,5 @@
-{ lib, pkgs, ... }: {
+{ config, pkgs, ... }:
 
-  
+{  
   
 }

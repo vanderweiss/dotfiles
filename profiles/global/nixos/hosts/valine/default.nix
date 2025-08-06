@@ -1,7 +1,8 @@
 # Configuration for Raspberry Pi 4 [4GB] code name "valine"
 
-{ ... }:{
-      
+{ ... }:
+
+{      
   imports = [
     ../../hosts/global
 
@@ -11,19 +12,18 @@
     ../../hosts/global/virtual
 
     # Host-specific (hardware, boot, networking, native containers)
-    ./hardware.nix
-    ./boot.nix
-    ./networking.nix
-    ./oci-containers.nix
-  ]; 
-
+    ../../hosts/valine/hardware.nix
+    ../../hosts/valine/boot.nix
+    ../../hosts/valine/networking.nix
+    ../../hosts/valine/oci-containers.nix
+  ];
+  
   # Code name assigned to host name
   networking.hostName = "valine";
 
   # Timezone set to the host's location in Peru, Lima
-  time.timeZone = "America/Lima";
+  time.timeZone = "America/Lima";  
 
 
   system.stateVersion = "25.05";
-
 }

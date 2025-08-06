@@ -1,5 +1,6 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
 
+{  
   environment.systemPackages = with pkgs; [
     podman-compose
     lazydocker
@@ -17,5 +18,4 @@
       dns_enabled = true;
     };
   };  
-
 }

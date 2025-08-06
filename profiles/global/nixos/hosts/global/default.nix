@@ -1,5 +1,6 @@
-{ config, lib, pkgs,  ... }:{
+{ config, lib, pkgs,  ... }:
 
+{
   nix = {
     settings = {
       experimental-features = "nix-command flakes";
@@ -27,13 +28,34 @@
       dates = "weekly";
     };
   };
+
+  users.users = {
+    you = {
+      isNormalUser = true;
+      extraGroups = [ "wheel" ];
+    };
+  };
     
+  security = {
+    sudo.wheelNeedsPassword = false;
+    doas = {
+      enable = true;
+      extraRules = [
+        {
+          groups = [ "wheel" ];
+          noPass = true;
+          keepEnv = true;
+        }
+      ];
+    };
+  };
+      
   environment.systemPackages = with pkgs; [
     wget
+    git
     vim
     helix
-    git
-    fastfetch
+    sops
    ];
     
   services = {
@@ -60,27 +82,5 @@
     };
     
     getty.autologinUser = "you";
-  };
-
-  security = {
-    sudo.wheelNeedsPassword = false;
-    doas = {
-      enable = true;
-      extraRules = [
-        {
-          groups = [ "wheel" ];
-          noPass = true;
-          keepEnv = true;
-        }
-      ];
-    };
   };  
-
-  users.users = {
-    you = {
-      isNormalUser = true;
-      extraGroups = [ "wheel" ];
-    };
-  };  
-
 }
